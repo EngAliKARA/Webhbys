@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HbysModelStoreContainer" CdmEntityContainer="HbysEntities">
+    <EntitySetMapping Name="PER_ADAY_DRM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_ADAY_DRM_TNM">
+        <MappingFragment StoreEntitySet="PER_ADAY_DRM_TNM">
+          <ScalarProperty Name="ADAY_DRM_KODU" ColumnName="ADAY_DRM_KODU" />
+          <ScalarProperty Name="ADAY_DRM_ADI" ColumnName="ADAY_DRM_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_AILE">
+      <EntityTypeMapping TypeName="HbysModel.PER_AILE">
+        <MappingFragment StoreEntitySet="PER_AILE">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="YKN_TCKIMLIK_NO" ColumnName="YKN_TCKIMLIK_NO" />
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="SOYADI" ColumnName="SOYADI" />
+          <ScalarProperty Name="YKN_KODU" ColumnName="YKN_KODU" />
+          <ScalarProperty Name="OKUL_TUR_KODU" ColumnName="OKUL_TUR_KODU" />
+          <ScalarProperty Name="DGM_TRH" ColumnName="DGM_TRH" />
+          <ScalarProperty Name="OLM_TRH" ColumnName="OLM_TRH" />
+          <ScalarProperty Name="CINS_KODU" ColumnName="CINS_KODU" />
+          <ScalarProperty Name="SAKAT_DRC_KODU" ColumnName="SAKAT_DRC_KODU" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="BKM_YKM_EH" ColumnName="BKM_YKM_EH" />
+          <ScalarProperty Name="SAKAT_KODU" ColumnName="SAKAT_KODU" />
+          <ScalarProperty Name="YKN_PER_ID" ColumnName="YKN_PER_ID" />
+          <ScalarProperty Name="ONCEKI_SOYADI" ColumnName="ONCEKI_SOYADI" />
+          <ScalarProperty Name="MDN_HAL_KODU" ColumnName="MDN_HAL_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_AILE_SGLK_MLZ">
+      <EntityTypeMapping TypeName="HbysModel.PER_AILE_SGLK_MLZ">
+        <MappingFragment StoreEntitySet="PER_AILE_SGLK_MLZ">
+          <ScalarProperty Name="MLZ_KODU" ColumnName="MLZ_KODU" />
+          <ScalarProperty Name="BELGE_TRH" ColumnName="BELGE_TRH" />
+          <ScalarProperty Name="BELGE_NO" ColumnName="BELGE_NO" />
+          <ScalarProperty Name="SURE" ColumnName="SURE" />
+          <ScalarProperty Name="SURE_KODU" ColumnName="SURE_KODU" />
+          <ScalarProperty Name="TKRR_ALM_TRH" ColumnName="TKRR_ALM_TRH" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="YKN_PER_ID" ColumnName="YKN_PER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_BRANS_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_BRANS_TNM">
+        <MappingFragment StoreEntitySet="PER_BRANS_TNM">
+          <ScalarProperty Name="BRANS_KODU" ColumnName="BRANS_KODU" />
+          <ScalarProperty Name="BRANS_ADI" ColumnName="BRANS_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_CEZA">
+      <EntityTypeMapping TypeName="HbysModel.PER_CEZA">
+        <MappingFragment StoreEntitySet="PER_CEZA">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="CEZA_KODU" ColumnName="CEZA_KODU" />
+          <ScalarProperty Name="CEZA_TRH" ColumnName="CEZA_TRH" />
+          <ScalarProperty Name="CEZA_ID" ColumnName="CEZA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_CEZA_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_CEZA_TNM">
+        <MappingFragment StoreEntitySet="PER_CEZA_TNM">
+          <ScalarProperty Name="CEZA_KODU" ColumnName="CEZA_KODU" />
+          <ScalarProperty Name="CEZA_ADI" ColumnName="CEZA_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_CLS_BCM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_CLS_BCM_TNM">
+        <MappingFragment StoreEntitySet="PER_CLS_BCM_TNM">
+          <ScalarProperty Name="CLS_BCM_KODU" ColumnName="CLS_BCM_KODU" />
+          <ScalarProperty Name="CLS_BCM_ADI" ColumnName="CLS_BCM_ADI" />
+          <ScalarProperty Name="CLS_DRM_KODU" ColumnName="CLS_DRM_KODU" />
+          <ScalarProperty Name="SIRA_NO" ColumnName="SIRA_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_DIL_SNV">
+      <EntityTypeMapping TypeName="HbysModel.PER_DIL_SNV">
+        <MappingFragment StoreEntitySet="PER_DIL_SNV">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="DIL_KODU" ColumnName="DIL_KODU" />
+          <ScalarProperty Name="SNV_KODU" ColumnName="SNV_KODU" />
+          <ScalarProperty Name="SNV_TRH" ColumnName="SNV_TRH" />
+          <ScalarProperty Name="NOTU" ColumnName="NOTU" />
+          <ScalarProperty Name="DRC_KODU" ColumnName="DRC_KODU" />
+          <ScalarProperty Name="BELGE_TURU" ColumnName="BELGE_TURU" />
+          <ScalarProperty Name="BELGE_TRH" ColumnName="BELGE_TRH" />
+          <ScalarProperty Name="BELGE_NO" ColumnName="BELGE_NO" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="PDILID" ColumnName="PDILID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_DIL_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_DIL_TNM">
+        <MappingFragment StoreEntitySet="PER_DIL_TNM">
+          <ScalarProperty Name="DIL_KODU" ColumnName="DIL_KODU" />
+          <ScalarProperty Name="DIL_ADI" ColumnName="DIL_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_EHLIYET">
+      <EntityTypeMapping TypeName="HbysModel.PER_EHLIYET">
+        <MappingFragment StoreEntitySet="PER_EHLIYET">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="EHLIYET_KODU" ColumnName="EHLIYET_KODU" />
+          <ScalarProperty Name="BELGE_TRH" ColumnName="BELGE_TRH" />
+          <ScalarProperty Name="BELGE_NO" ColumnName="BELGE_NO" />
+          <ScalarProperty Name="PEHID" ColumnName="PEHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_EHLIYET_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_EHLIYET_TNM">
+        <MappingFragment StoreEntitySet="PER_EHLIYET_TNM">
+          <ScalarProperty Name="EHLIYET_KODU" ColumnName="EHLIYET_KODU" />
+          <ScalarProperty Name="EHLIYET_ADI" ColumnName="EHLIYET_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_HRK">
+      <EntityTypeMapping TypeName="HbysModel.PER_HRK">
+        <MappingFragment StoreEntitySet="PER_HRK">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="DEG_TRH" ColumnName="DEG_TRH" />
+          <ScalarProperty Name="ESKI_KDR" ColumnName="ESKI_KDR" />
+          <ScalarProperty Name="ESKI_DRC" ColumnName="ESKI_DRC" />
+          <ScalarProperty Name="ESKI_KDM" ColumnName="ESKI_KDM" />
+          <ScalarProperty Name="ESKI_KDM_YILI" ColumnName="ESKI_KDM_YILI" />
+          <ScalarProperty Name="SONRAKI_TERFI_TRH" ColumnName="SONRAKI_TERFI_TRH" />
+          <ScalarProperty Name="YENI_KDR" ColumnName="YENI_KDR" />
+          <ScalarProperty Name="YENI_DRC" ColumnName="YENI_DRC" />
+          <ScalarProperty Name="YENI_KDM" ColumnName="YENI_KDM" />
+          <ScalarProperty Name="YENI_KDM_YILI" ColumnName="YENI_KDM_YILI" />
+          <ScalarProperty Name="ESKI_UNVAN_KODU" ColumnName="ESKI_UNVAN_KODU" />
+          <ScalarProperty Name="YENI_UNVAN_KODU" ColumnName="YENI_UNVAN_KODU" />
+          <ScalarProperty Name="YENI_BSLM_TRH" ColumnName="YENI_BSLM_TRH" />
+          <ScalarProperty Name="ESKI_AYRLS_TRH" ColumnName="ESKI_AYRLS_TRH" />
+          <ScalarProperty Name="KYT_TRH" ColumnName="KYT_TRH" />
+          <ScalarProperty Name="KYT_NO" ColumnName="KYT_NO" />
+          <ScalarProperty Name="TKLF_EDEN_ADI" ColumnName="TKLF_EDEN_ADI" />
+          <ScalarProperty Name="TKLF_EDEN_SOYADI" ColumnName="TKLF_EDEN_SOYADI" />
+          <ScalarProperty Name="TKLF_EDEN_GRV" ColumnName="TKLF_EDEN_GRV" />
+          <ScalarProperty Name="ONAY_PER_ADI" ColumnName="ONAY_PER_ADI" />
+          <ScalarProperty Name="ONAY_PER_SOYADI" ColumnName="ONAY_PER_SOYADI" />
+          <ScalarProperty Name="ONAY_PER_GRV" ColumnName="ONAY_PER_GRV" />
+          <ScalarProperty Name="ADAY_DRM_KODU" ColumnName="ADAY_DRM_KODU" />
+          <ScalarProperty Name="ADAY_SURE" ColumnName="ADAY_SURE" />
+          <ScalarProperty Name="ASK_DRM_KODU" ColumnName="ASK_DRM_KODU" />
+          <ScalarProperty Name="TERFID" ColumnName="TERFID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_IL_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_IL_TNM">
+        <MappingFragment StoreEntitySet="PER_IL_TNM">
+          <ScalarProperty Name="IL_KODU" ColumnName="IL_KODU" />
+          <ScalarProperty Name="IL_ADI" ColumnName="IL_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_ILCE_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_ILCE_TNM">
+        <MappingFragment StoreEntitySet="PER_ILCE_TNM">
+          <ScalarProperty Name="ILCE_KODU" ColumnName="ILCE_KODU" />
+          <ScalarProperty Name="ILCE_ADI" ColumnName="ILCE_ADI" />
+          <ScalarProperty Name="IL_KODU" ColumnName="IL_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_ISTIFA">
+      <EntityTypeMapping TypeName="HbysModel.PER_ISTIFA">
+        <MappingFragment StoreEntitySet="PER_ISTIFA">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="ISTIFA_TRH" ColumnName="ISTIFA_TRH" />
+          <ScalarProperty Name="DLKC_TRH" ColumnName="DLKC_TRH" />
+          <ScalarProperty Name="DLKC_NO" ColumnName="DLKC_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_IZIN">
+      <EntityTypeMapping TypeName="HbysModel.PER_IZIN">
+        <MappingFragment StoreEntitySet="PER_IZIN">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="IZIN_KODU" ColumnName="IZIN_KODU" />
+          <ScalarProperty Name="IZIN_BSL_TRH" ColumnName="IZIN_BSL_TRH" />
+          <ScalarProperty Name="IZIN_BTS_TRH" ColumnName="IZIN_BTS_TRH" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="KLN_IZIN1" ColumnName="KLN_IZIN1" />
+          <ScalarProperty Name="KLN_IZIN2" ColumnName="KLN_IZIN2" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="YERINE" ColumnName="YERINE" />
+          <ScalarProperty Name="YOL_SURE" ColumnName="YOL_SURE" />
+          <ScalarProperty Name="GRV_BSL_TRH" ColumnName="GRV_BSL_TRH" />
+          <ScalarProperty Name="HZMT_SURE" ColumnName="HZMT_SURE" />
+          <ScalarProperty Name="IZIN_ISTEK_TRH" ColumnName="IZIN_ISTEK_TRH" />
+          <ScalarProperty Name="IZIN_KAYIT_NO" ColumnName="IZIN_KAYIT_NO" />
+          <ScalarProperty Name="BRM_AMIRI" ColumnName="BRM_AMIRI" />
+          <ScalarProperty Name="BRM_AMIRI_UNVAN" ColumnName="BRM_AMIRI_UNVAN" />
+          <ScalarProperty Name="BASHEKIM" ColumnName="BASHEKIM" />
+          <ScalarProperty Name="BASHEKIM_YER" ColumnName="BASHEKIM_YER" />
+          <ScalarProperty Name="BASHEKIM_UNVAN" ColumnName="BASHEKIM_UNVAN" />
+          <ScalarProperty Name="SGLK_BSK" ColumnName="SGLK_BSK" />
+          <ScalarProperty Name="SGLK_BSK_YER" ColumnName="SGLK_BSK_YER" />
+          <ScalarProperty Name="SGLK_BSK_UNVAN" ColumnName="SGLK_BSK_UNVAN" />
+          <ScalarProperty Name="KAYMAKAM" ColumnName="KAYMAKAM" />
+          <ScalarProperty Name="KAYMAKAM_UNVAN" ColumnName="KAYMAKAM_UNVAN" />
+          <ScalarProperty Name="DAKIKA_IZIN" ColumnName="DAKIKA_IZIN" />
+          <ScalarProperty Name="GNL_ACIKLAMA" ColumnName="GNL_ACIKLAMA" />
+          <ScalarProperty Name="DUZENLEYEN" ColumnName="DUZENLEYEN" />
+          <ScalarProperty Name="DUZENLEYEN_UNVAN" ColumnName="DUZENLEYEN_UNVAN" />
+          <ScalarProperty Name="IZINID" ColumnName="IZINID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_IZIN_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_IZIN_TNM">
+        <MappingFragment StoreEntitySet="PER_IZIN_TNM">
+          <ScalarProperty Name="IZIN_KODU" ColumnName="IZIN_KODU" />
+          <ScalarProperty Name="IZIN_ADI" ColumnName="IZIN_ADI" />
+          <ScalarProperty Name="UCRETSIZ_EH" ColumnName="UCRETSIZ_EH" />
+          <ScalarProperty Name="PLN_EH" ColumnName="PLN_EH" />
+          <ScalarProperty Name="IZIN_TURU" ColumnName="IZIN_TURU" />
+          <ScalarProperty Name="IZIN_SURE" ColumnName="IZIN_SURE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KAN_ISTM_FRM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KAN_ISTM_FRM">
+        <MappingFragment StoreEntitySet="PER_KAN_ISTM_FRM">
+          <ScalarProperty Name="KAN_ISTM_FRM_NO" ColumnName="KAN_ISTM_FRM_NO" />
+          <ScalarProperty Name="TCKIMLIK_NO" ColumnName="TCKIMLIK_NO" />
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="SOYADI" ColumnName="SOYADI" />
+          <ScalarProperty Name="CINS_KODU" ColumnName="CINS_KODU" />
+          <ScalarProperty Name="TESHIS" ColumnName="TESHIS" />
+          <ScalarProperty Name="ONCE_TRNSFZYN_YPLD_EH" ColumnName="ONCE_TRNSFZYN_YPLD_EH" />
+          <ScalarProperty Name="ISTM_TRH" ColumnName="ISTM_TRH" />
+          <ScalarProperty Name="UNITE" ColumnName="UNITE" />
+          <ScalarProperty Name="SERVIS" ColumnName="SERVIS" />
+          <ScalarProperty Name="HASTA_ODA_NO" ColumnName="HASTA_ODA_NO" />
+          <ScalarProperty Name="KAN_ISTM_NDN" ColumnName="KAN_ISTM_NDN" />
+          <ScalarProperty Name="KAN_GRP_KODU" ColumnName="KAN_GRP_KODU" />
+          <ScalarProperty Name="TRNSFZYN_TRH" ColumnName="TRNSFZYN_TRH" />
+          <ScalarProperty Name="ISTM_YPN_DKTR_ID" ColumnName="ISTM_YPN_DKTR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KAN_ISTM_FRM_TUR">
+      <EntityTypeMapping TypeName="HbysModel.PER_KAN_ISTM_FRM_TUR">
+        <MappingFragment StoreEntitySet="PER_KAN_ISTM_FRM_TUR">
+          <ScalarProperty Name="KAN_ISTM_FRM_NO" ColumnName="KAN_ISTM_FRM_NO" />
+          <ScalarProperty Name="KAN_ISTM_TUR_KODU" ColumnName="KAN_ISTM_TUR_KODU" />
+          <ScalarProperty Name="MKTR" ColumnName="MKTR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KAN_ISTM_TUR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KAN_ISTM_TUR_TNM">
+        <MappingFragment StoreEntitySet="PER_KAN_ISTM_TUR_TNM">
+          <ScalarProperty Name="KAN_ISTM_TUR_KODU" ColumnName="KAN_ISTM_TUR_KODU" />
+          <ScalarProperty Name="KAN_ISTM_TUR_ADI" ColumnName="KAN_ISTM_TUR_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KARTLAR">
+      <EntityTypeMapping TypeName="HbysModel.PER_KARTLAR">
+        <MappingFragment StoreEntitySet="PER_KARTLAR">
+          <ScalarProperty Name="KARTID" ColumnName="KARTID" />
+          <ScalarProperty Name="PERID" ColumnName="PERID" />
+          <ScalarProperty Name="KARTTURU" ColumnName="KARTTURU" />
+          <ScalarProperty Name="GOREVI" ColumnName="GOREVI" />
+          <ScalarProperty Name="BIRIMI" ColumnName="BIRIMI" />
+          <ScalarProperty Name="VERILIS_NEDEN" ColumnName="VERILIS_NEDEN" />
+          <ScalarProperty Name="VERILIS_TARIH" ColumnName="VERILIS_TARIH" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KIMLIK">
+      <EntityTypeMapping TypeName="HbysModel.PER_KIMLIK">
+        <MappingFragment StoreEntitySet="PER_KIMLIK">
+          <ScalarProperty Name="TCKIMLIK_NO" ColumnName="TCKIMLIK_NO" />
+          <ScalarProperty Name="EMSAN_NO" ColumnName="EMSAN_NO" />
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="SOYADI" ColumnName="SOYADI" />
+          <ScalarProperty Name="BABA_ADI" ColumnName="BABA_ADI" />
+          <ScalarProperty Name="ANA_ADI" ColumnName="ANA_ADI" />
+          <ScalarProperty Name="ONCEKI_SOYADI" ColumnName="ONCEKI_SOYADI" />
+          <ScalarProperty Name="DRM_KODU" ColumnName="DRM_KODU" />
+          <ScalarProperty Name="DGM_TRH" ColumnName="DGM_TRH" />
+          <ScalarProperty Name="SNF_KODU" ColumnName="SNF_KODU" />
+          <ScalarProperty Name="UNVAN_KODU" ColumnName="UNVAN_KODU" />
+          <ScalarProperty Name="BRANS_KODU" ColumnName="BRANS_KODU" />
+          <ScalarProperty Name="ADAY_DRM_KODU" ColumnName="ADAY_DRM_KODU" />
+          <ScalarProperty Name="MCBR_HZMT_DRM_KODU" ColumnName="MCBR_HZMT_DRM_KODU" />
+          <ScalarProperty Name="STAJ_DRM_KODU" ColumnName="STAJ_DRM_KODU" />
+          <ScalarProperty Name="MCBR_HZMT_BTS_TRH" ColumnName="MCBR_HZMT_BTS_TRH" />
+          <ScalarProperty Name="STAJ_BTS_TRH" ColumnName="STAJ_BTS_TRH" />
+          <ScalarProperty Name="MMR_BSL_TRH" ColumnName="MMR_BSL_TRH" />
+          <ScalarProperty Name="TSKLT_KODU" ColumnName="TSKLT_KODU" />
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="CINS_KODU" ColumnName="CINS_KODU" />
+          <ScalarProperty Name="NFS_CZD_SERI" ColumnName="NFS_CZD_SERI" />
+          <ScalarProperty Name="NFS_CZD_NO" ColumnName="NFS_CZD_NO" />
+          <ScalarProperty Name="MDN_HAL_KODU" ColumnName="MDN_HAL_KODU" />
+          <ScalarProperty Name="DINI" ColumnName="DINI" />
+          <ScalarProperty Name="ULKE_KODU" ColumnName="ULKE_KODU" />
+          <ScalarProperty Name="KAN_GRP_KODU" ColumnName="KAN_GRP_KODU" />
+          <ScalarProperty Name="NFS_KYT_IL_KODU" ColumnName="NFS_KYT_IL_KODU" />
+          <ScalarProperty Name="NFS_KYT_ILCE_KODU" ColumnName="NFS_KYT_ILCE_KODU" />
+          <ScalarProperty Name="NFS_KYT_KOY_MAH" ColumnName="NFS_KYT_KOY_MAH" />
+          <ScalarProperty Name="NFS_KYT_CILT_NO" ColumnName="NFS_KYT_CILT_NO" />
+          <ScalarProperty Name="NFS_KYT_AILE_SIRA_NO" ColumnName="NFS_KYT_AILE_SIRA_NO" />
+          <ScalarProperty Name="NFS_KYT_SIRA_NO" ColumnName="NFS_KYT_SIRA_NO" />
+          <ScalarProperty Name="NFS_CZD_VRN_YER" ColumnName="NFS_CZD_VRN_YER" />
+          <ScalarProperty Name="NFS_CZD_VRL_NDN" ColumnName="NFS_CZD_VRL_NDN" />
+          <ScalarProperty Name="NFS_CZD_VRL_TRH" ColumnName="NFS_CZD_VRL_TRH" />
+          <ScalarProperty Name="NFS_CZD_KYT_NO" ColumnName="NFS_CZD_KYT_NO" />
+          <ScalarProperty Name="DGM_YERI" ColumnName="DGM_YERI" />
+          <ScalarProperty Name="ADR_DAIMI" ColumnName="ADR_DAIMI" />
+          <ScalarProperty Name="ADR_IS" ColumnName="ADR_IS" />
+          <ScalarProperty Name="TLF_EV" ColumnName="TLF_EV" />
+          <ScalarProperty Name="TLF_IS" ColumnName="TLF_IS" />
+          <ScalarProperty Name="TLF_CEP" ColumnName="TLF_CEP" />
+          <ScalarProperty Name="ADR_EV" ColumnName="ADR_EV" />
+          <ScalarProperty Name="VERGI_NO" ColumnName="VERGI_NO" />
+          <ScalarProperty Name="KRM_SCL_NO" ColumnName="KRM_SCL_NO" />
+          <ScalarProperty Name="ASKR_DNS_TRH" ColumnName="ASKR_DNS_TRH" />
+          <ScalarProperty Name="ASKR_GDS_TRH" ColumnName="ASKR_GDS_TRH" />
+          <ScalarProperty Name="ASKR_DRM_KODU" ColumnName="ASKR_DRM_KODU" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="KRM_BRM_KODU" ColumnName="KRM_BRM_KODU" />
+          <ScalarProperty Name="KRM_BRM_KDR_KODU" ColumnName="KRM_BRM_KDR_KODU" />
+          <ScalarProperty Name="KDM_YILI" ColumnName="KDM_YILI" />
+          <ScalarProperty Name="KDR_DRC" ColumnName="KDR_DRC" />
+          <ScalarProperty Name="KDR_KDM" ColumnName="KDR_KDM" />
+          <ScalarProperty Name="PER_SIRA_NO" ColumnName="PER_SIRA_NO" />
+          <ScalarProperty Name="SAKAT_KODU" ColumnName="SAKAT_KODU" />
+          <ScalarProperty Name="SAKAT_DRC_KODU" ColumnName="SAKAT_DRC_KODU" />
+          <ScalarProperty Name="KTL_TRH" ColumnName="KTL_TRH" />
+          <ScalarProperty Name="AYR_TRH" ColumnName="AYR_TRH" />
+          <ScalarProperty Name="EPOSTA" ColumnName="EPOSTA" />
+          <ScalarProperty Name="SEND_ID" ColumnName="SEND_ID" />
+          <ScalarProperty Name="HASTALIK_BAGISIKLIK" ColumnName="HASTALIK_BAGISIKLIK" />
+          <ScalarProperty Name="PDKS_KIMLIK" ColumnName="PDKS_KIMLIK" />
+          <ScalarProperty Name="PDKS_KART_NO" ColumnName="PDKS_KART_NO" />
+          <ScalarProperty Name="PDKS_SIFRE" ColumnName="PDKS_SIFRE" />
+          <ScalarProperty Name="TLF_DAHILI" ColumnName="TLF_DAHILI" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KRM_BKNLK_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KRM_BKNLK_TNM">
+        <MappingFragment StoreEntitySet="PER_KRM_BKNLK_TNM">
+          <ScalarProperty Name="BKNLK_KODU" ColumnName="BKNLK_KODU" />
+          <ScalarProperty Name="BKNLK_ADI" ColumnName="BKNLK_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KRM_BRM_KDR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KRM_BRM_KDR_TNM">
+        <MappingFragment StoreEntitySet="PER_KRM_BRM_KDR_TNM">
+          <ScalarProperty Name="KRM_BRM_KDR_KODU" ColumnName="KRM_BRM_KDR_KODU" />
+          <ScalarProperty Name="KRM_BRM_KDR_ADI" ColumnName="KRM_BRM_KDR_ADI" />
+          <ScalarProperty Name="KDR_STNDRT" ColumnName="KDR_STNDRT" />
+          <ScalarProperty Name="KRM_BRM_KODU" ColumnName="KRM_BRM_KODU" />
+          <ScalarProperty Name="DRM_KODU" ColumnName="DRM_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KRM_BRM_KDR_YER">
+      <EntityTypeMapping TypeName="HbysModel.PER_KRM_BRM_KDR_YER">
+        <MappingFragment StoreEntitySet="PER_KRM_BRM_KDR_YER">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="KRM_BRM_KDR_KODU" ColumnName="KRM_BRM_KDR_KODU" />
+          <ScalarProperty Name="GRV_BSL_TRH" ColumnName="GRV_BSL_TRH" />
+          <ScalarProperty Name="GRV_BTS_TRH" ColumnName="GRV_BTS_TRH" />
+          <ScalarProperty Name="CLS_BCM_KODU" ColumnName="CLS_BCM_KODU" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="DRM_KODU" ColumnName="DRM_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KRM_BRM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KRM_BRM_TNM">
+        <MappingFragment StoreEntitySet="PER_KRM_BRM_TNM">
+          <ScalarProperty Name="KRM_BRM_KODU" ColumnName="KRM_BRM_KODU" />
+          <ScalarProperty Name="KRM_BRM_ADI" ColumnName="KRM_BRM_ADI" />
+          <ScalarProperty Name="KRM_KODU" ColumnName="KRM_KODU" />
+          <ScalarProperty Name="DRM_KODU" ColumnName="DRM_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KRM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KRM_TNM">
+        <MappingFragment StoreEntitySet="PER_KRM_TNM">
+          <ScalarProperty Name="KRM_KODU" ColumnName="KRM_KODU" />
+          <ScalarProperty Name="KRM_ADI" ColumnName="KRM_ADI" />
+          <ScalarProperty Name="KAMU_OZEL" ColumnName="KAMU_OZEL" />
+          <ScalarProperty Name="TLF" ColumnName="TLF" />
+          <ScalarProperty Name="FAKS" ColumnName="FAKS" />
+          <ScalarProperty Name="ADR" ColumnName="ADR" />
+          <ScalarProperty Name="BKNLK_KODU" ColumnName="BKNLK_KODU" />
+          <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+          <ScalarProperty Name="IZIN_RPR_MKM_ADI" ColumnName="IZIN_RPR_MKM_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KURS">
+      <EntityTypeMapping TypeName="HbysModel.PER_KURS">
+        <MappingFragment StoreEntitySet="PER_KURS">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="KURS_KODU" ColumnName="KURS_KODU" />
+          <ScalarProperty Name="KURS_BSL_TRH" ColumnName="KURS_BSL_TRH" />
+          <ScalarProperty Name="KURS_BTS_TRH" ColumnName="KURS_BTS_TRH" />
+          <ScalarProperty Name="DRC_KODU" ColumnName="DRC_KODU" />
+          <ScalarProperty Name="SIRA_NO" ColumnName="SIRA_NO" />
+          <ScalarProperty Name="KURS_KRM_ADI" ColumnName="KURS_KRM_ADI" />
+          <ScalarProperty Name="KURS_ID" ColumnName="KURS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KURS_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KURS_TNM">
+        <MappingFragment StoreEntitySet="PER_KURS_TNM">
+          <ScalarProperty Name="KURS_KODU" ColumnName="KURS_KODU" />
+          <ScalarProperty Name="KURS_ADI" ColumnName="KURS_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MCBR_HZMT_DRM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_MCBR_HZMT_DRM_TNM">
+        <MappingFragment StoreEntitySet="PER_MCBR_HZMT_DRM_TNM">
+          <ScalarProperty Name="MCBR_HZMT_DRM_KODU" ColumnName="MCBR_HZMT_DRM_KODU" />
+          <ScalarProperty Name="MCBR_HZMT_DRM_ADI" ColumnName="MCBR_HZMT_DRM_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MSLK_FLYT">
+      <EntityTypeMapping TypeName="HbysModel.PER_MSLK_FLYT">
+        <MappingFragment StoreEntitySet="PER_MSLK_FLYT">
+          <ScalarProperty Name="MSLK_FLYT_ID" ColumnName="MSLK_FLYT_ID" />
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="MSLK_FLYT_TUR_KODU" ColumnName="MSLK_FLYT_TUR_KODU" />
+          <ScalarProperty Name="MSLK_FLYT_KODU" ColumnName="MSLK_FLYT_KODU" />
+          <ScalarProperty Name="MSLK_FLYT_DETAY_KODU" ColumnName="MSLK_FLYT_DETAY_KODU" />
+          <ScalarProperty Name="GCR_TRH" ColumnName="GCR_TRH" />
+          <ScalarProperty Name="ISIM_SIRA_NO" ColumnName="ISIM_SIRA_NO" />
+          <ScalarProperty Name="ATIF_EH" ColumnName="ATIF_EH" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="PUAN" ColumnName="PUAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MSLK_FLYT_DETAY_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_MSLK_FLYT_DETAY_TNM">
+        <MappingFragment StoreEntitySet="PER_MSLK_FLYT_DETAY_TNM">
+          <ScalarProperty Name="MSLK_FLYT_DETAY_KODU" ColumnName="MSLK_FLYT_DETAY_KODU" />
+          <ScalarProperty Name="MSLK_FLYT_DETAY_ADI" ColumnName="MSLK_FLYT_DETAY_ADI" />
+          <ScalarProperty Name="MSLK_FLYT_KODU" ColumnName="MSLK_FLYT_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MSLK_FLYT_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_MSLK_FLYT_TNM">
+        <MappingFragment StoreEntitySet="PER_MSLK_FLYT_TNM">
+          <ScalarProperty Name="MSLK_FLYT_KODU" ColumnName="MSLK_FLYT_KODU" />
+          <ScalarProperty Name="MSLK_FLYT_ADI" ColumnName="MSLK_FLYT_ADI" />
+          <ScalarProperty Name="MSLK_FLYT_TUR_KODU" ColumnName="MSLK_FLYT_TUR_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MSLK_FLYT_TUR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_MSLK_FLYT_TUR_TNM">
+        <MappingFragment StoreEntitySet="PER_MSLK_FLYT_TUR_TNM">
+          <ScalarProperty Name="MSLK_FLYT_TUR_KODU" ColumnName="MSLK_FLYT_TUR_KODU" />
+          <ScalarProperty Name="MSLK_FLYT_TUR_ADI" ColumnName="MSLK_FLYT_TUR_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_MUAYENE">
+      <EntityTypeMapping TypeName="HbysModel.PER_MUAYENE">
+        <MappingFragment StoreEntitySet="PER_MUAYENE">
+          <ScalarProperty Name="MUAYENE_ID" ColumnName="MUAYENE_ID" />
+          <ScalarProperty Name="MUAYENE_KODU" ColumnName="MUAYENE_KODU" />
+          <ScalarProperty Name="KRM_ADI" ColumnName="KRM_ADI" />
+          <ScalarProperty Name="TCKIMLIK_NO" ColumnName="TCKIMLIK_NO" />
+          <ScalarProperty Name="MMR_ADI_SOYADI" ColumnName="MMR_ADI_SOYADI" />
+          <ScalarProperty Name="HST_ADI_SOYADI" ColumnName="HST_ADI_SOYADI" />
+          <ScalarProperty Name="GRV_ADI" ColumnName="GRV_ADI" />
+          <ScalarProperty Name="KRM_SCL_NO" ColumnName="KRM_SCL_NO" />
+          <ScalarProperty Name="KDR_DRC" ColumnName="KDR_DRC" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="YTK_ADI_SOYADI" ColumnName="YTK_ADI_SOYADI" />
+          <ScalarProperty Name="YTK_UNVAN" ColumnName="YTK_UNVAN" />
+          <ScalarProperty Name="KRM_KYT_TRH" ColumnName="KRM_KYT_TRH" />
+          <ScalarProperty Name="KRM_KYT_NO" ColumnName="KRM_KYT_NO" />
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_NBT_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_NBT_TNM">
+        <MappingFragment StoreEntitySet="PER_NBT_TNM">
+          <ScalarProperty Name="NBT_NO" ColumnName="NBT_NO" />
+          <ScalarProperty Name="NBT_ADI" ColumnName="NBT_ADI" />
+          <ScalarProperty Name="KRM_KODU" ColumnName="KRM_KODU" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="IMZA_PER_AD_SOYAD1" ColumnName="IMZA_PER_AD_SOYAD1" />
+          <ScalarProperty Name="IMZA_PER_UNVAN1" ColumnName="IMZA_PER_UNVAN1" />
+          <ScalarProperty Name="IMZA_PER_GRV1" ColumnName="IMZA_PER_GRV1" />
+          <ScalarProperty Name="IMZA_PER_AD_SOYAD2" ColumnName="IMZA_PER_AD_SOYAD2" />
+          <ScalarProperty Name="IMZA_PER_UNVAN2" ColumnName="IMZA_PER_UNVAN2" />
+          <ScalarProperty Name="IMZA_PER_GRV2" ColumnName="IMZA_PER_GRV2" />
+          <ScalarProperty Name="IMZA_PER_AD_SOYAD3" ColumnName="IMZA_PER_AD_SOYAD3" />
+          <ScalarProperty Name="IMZA_PER_UNVAN3" ColumnName="IMZA_PER_UNVAN3" />
+          <ScalarProperty Name="IMZA_PER_GRV3" ColumnName="IMZA_PER_GRV3" />
+          <ScalarProperty Name="S112_GONDERILSIN" ColumnName="S112_GONDERILSIN" />
+          <ScalarProperty Name="S112_BOLUM_ID" ColumnName="S112_BOLUM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_NBT_VRD">
+      <EntityTypeMapping TypeName="HbysModel.PER_NBT_VRD">
+        <MappingFragment StoreEntitySet="PER_NBT_VRD">
+          <ScalarProperty Name="VRD_NO" ColumnName="VRD_NO" />
+          <ScalarProperty Name="YIL" ColumnName="YIL" />
+          <ScalarProperty Name="AY" ColumnName="AY" />
+          <ScalarProperty Name="ONAY_EH" ColumnName="ONAY_EH" />
+          <ScalarProperty Name="ONAY_TRH" ColumnName="ONAY_TRH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_NBT_VRD_PER">
+      <EntityTypeMapping TypeName="HbysModel.PER_NBT_VRD_PER">
+        <MappingFragment StoreEntitySet="PER_NBT_VRD_PER">
+          <ScalarProperty Name="VRD_NO" ColumnName="VRD_NO" />
+          <ScalarProperty Name="YIL" ColumnName="YIL" />
+          <ScalarProperty Name="AY" ColumnName="AY" />
+          <ScalarProperty Name="NBT_TTN_PER_ID" ColumnName="NBT_TTN_PER_ID" />
+          <ScalarProperty Name="GUN" ColumnName="GUN" />
+          <ScalarProperty Name="SIRA_NO" ColumnName="SIRA_NO" />
+          <ScalarProperty Name="NBT_TTCK_PER_ID" ColumnName="NBT_TTCK_PER_ID" />
+          <ScalarProperty Name="NBT_DGS_NDN" ColumnName="NBT_DGS_NDN" />
+          <ScalarProperty Name="BSL_SAAT" ColumnName="BSL_SAAT" />
+          <ScalarProperty Name="BTS_SAAT" ColumnName="BTS_SAAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_NBT_VRD_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_NBT_VRD_TNM">
+        <MappingFragment StoreEntitySet="PER_NBT_VRD_TNM">
+          <ScalarProperty Name="NBT_NO" ColumnName="NBT_NO" />
+          <ScalarProperty Name="VRD_NO" ColumnName="VRD_NO" />
+          <ScalarProperty Name="BSL_SAAT" ColumnName="BSL_SAAT" />
+          <ScalarProperty Name="BTS_SAAT" ColumnName="BTS_SAAT" />
+          <ScalarProperty Name="SURE" ColumnName="SURE" />
+          <ScalarProperty Name="SURE_KODU" ColumnName="SURE_KODU" />
+          <ScalarProperty Name="DRM_KODU" ColumnName="DRM_KODU" />
+          <ScalarProperty Name="PER_MKTR" ColumnName="PER_MKTR" />
+          <ScalarProperty Name="ACIL_KODU" ColumnName="ACIL_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_ODUL">
+      <EntityTypeMapping TypeName="HbysModel.PER_ODUL">
+        <MappingFragment StoreEntitySet="PER_ODUL">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="ODUL_KODU" ColumnName="ODUL_KODU" />
+          <ScalarProperty Name="ODUL_TRH" ColumnName="ODUL_TRH" />
+          <ScalarProperty Name="ODUL_ID" ColumnName="ODUL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_ODUL_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_ODUL_TNM">
+        <MappingFragment StoreEntitySet="PER_ODUL_TNM">
+          <ScalarProperty Name="ODUL_KODU" ColumnName="ODUL_KODU" />
+          <ScalarProperty Name="ODUL_ADI" ColumnName="ODUL_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL">
+        <MappingFragment StoreEntitySet="PER_OKUL">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="OKUL_TUR_KODU" ColumnName="OKUL_TUR_KODU" />
+          <ScalarProperty Name="OKUL_KODU" ColumnName="OKUL_KODU" />
+          <ScalarProperty Name="TAHSIL_ID" ColumnName="TAHSIL_ID" />
+          <ScalarProperty Name="FKLT_KODU" ColumnName="FKLT_KODU" />
+          <ScalarProperty Name="BLM_KODU" ColumnName="BLM_KODU" />
+          <ScalarProperty Name="BTS_TRH" ColumnName="BTS_TRH" />
+          <ScalarProperty Name="BSL_TRH" ColumnName="BSL_TRH" />
+          <ScalarProperty Name="DIPLOMA_NO" ColumnName="DIPLOMA_NO" />
+          <ScalarProperty Name="DIPLOMA_NOTU" ColumnName="DIPLOMA_NOTU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_FKLT_BLM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_FKLT_BLM_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_FKLT_BLM_TNM">
+          <ScalarProperty Name="BLM_KODU" ColumnName="BLM_KODU" />
+          <ScalarProperty Name="BLM_TUR_KODU" ColumnName="BLM_TUR_KODU" />
+          <ScalarProperty Name="FKLT_KODU" ColumnName="FKLT_KODU" />
+          <ScalarProperty Name="BLM_ADI" ColumnName="BLM_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_FKLT_BLM_TUR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_FKLT_BLM_TUR_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_FKLT_BLM_TUR_TNM">
+          <ScalarProperty Name="BLM_TUR_KODU" ColumnName="BLM_TUR_KODU" />
+          <ScalarProperty Name="BLM_TUR_ADI" ColumnName="BLM_TUR_ADI" />
+          <ScalarProperty Name="FKLT_TUR_KODU" ColumnName="FKLT_TUR_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_FKLT_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_FKLT_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_FKLT_TNM">
+          <ScalarProperty Name="OKUL_KODU" ColumnName="OKUL_KODU" />
+          <ScalarProperty Name="FKLT_KODU" ColumnName="FKLT_KODU" />
+          <ScalarProperty Name="FKLT_TUR_KODU" ColumnName="FKLT_TUR_KODU" />
+          <ScalarProperty Name="FKLT_ADI" ColumnName="FKLT_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_FKLT_TUR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_FKLT_TUR_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_FKLT_TUR_TNM">
+          <ScalarProperty Name="FKLT_TUR_KODU" ColumnName="FKLT_TUR_KODU" />
+          <ScalarProperty Name="FKLT_TUR_ADI" ColumnName="FKLT_TUR_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_TNM">
+          <ScalarProperty Name="OKUL_KODU" ColumnName="OKUL_KODU" />
+          <ScalarProperty Name="OKUL_ADI" ColumnName="OKUL_ADI" />
+          <ScalarProperty Name="OKUL_TUR_KODU" ColumnName="OKUL_TUR_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OKUL_TUR_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_OKUL_TUR_TNM">
+        <MappingFragment StoreEntitySet="PER_OKUL_TUR_TNM">
+          <ScalarProperty Name="OKUL_TUR_KODU" ColumnName="OKUL_TUR_KODU" />
+          <ScalarProperty Name="OKUL_TUR_ADI" ColumnName="OKUL_TUR_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_OZEL_MUAYENE">
+      <EntityTypeMapping TypeName="HbysModel.PER_OZEL_MUAYENE">
+        <MappingFragment StoreEntitySet="PER_OZEL_MUAYENE">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="MUAYENE_KODU" ColumnName="MUAYENE_KODU" />
+          <ScalarProperty Name="MUAYENE_ADI" ColumnName="MUAYENE_ADI" />
+          <ScalarProperty Name="ADR" ColumnName="ADR" />
+          <ScalarProperty Name="TLF" ColumnName="TLF" />
+          <ScalarProperty Name="BSL_TRH" ColumnName="BSL_TRH" />
+          <ScalarProperty Name="BTS_TRH" ColumnName="BTS_TRH" />
+          <ScalarProperty Name="FAKS" ColumnName="FAKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_RESIM">
+      <EntityTypeMapping TypeName="HbysModel.PER_RESIM">
+        <MappingFragment StoreEntitySet="PER_RESIM">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+          <ScalarProperty Name="RESIM_TIPI" ColumnName="RESIM_TIPI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SAKAT_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_SAKAT_TNM">
+        <MappingFragment StoreEntitySet="PER_SAKAT_TNM">
+          <ScalarProperty Name="SAKAT_KODU" ColumnName="SAKAT_KODU" />
+          <ScalarProperty Name="SAKAT_ADI" ColumnName="SAKAT_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SGLK">
+      <EntityTypeMapping TypeName="HbysModel.PER_SGLK">
+        <MappingFragment StoreEntitySet="PER_SGLK">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="KRONIK" ColumnName="KRONIK" />
+          <ScalarProperty Name="DEVAMLI_ILAC" ColumnName="DEVAMLI_ILAC" />
+          <ScalarProperty Name="LATEX" ColumnName="LATEX" />
+          <ScalarProperty Name="SIGARA" ColumnName="SIGARA" />
+          <ScalarProperty Name="BOY" ColumnName="BOY" />
+          <ScalarProperty Name="KILO" ColumnName="KILO" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SGLK_MLZ">
+      <EntityTypeMapping TypeName="HbysModel.PER_SGLK_MLZ">
+        <MappingFragment StoreEntitySet="PER_SGLK_MLZ">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="MLZ_KODU" ColumnName="MLZ_KODU" />
+          <ScalarProperty Name="BELGE_TRH" ColumnName="BELGE_TRH" />
+          <ScalarProperty Name="BELGE_NO" ColumnName="BELGE_NO" />
+          <ScalarProperty Name="SURE" ColumnName="SURE" />
+          <ScalarProperty Name="SURE_KODU" ColumnName="SURE_KODU" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TKRR_ALM_TRH" ColumnName="TKRR_ALM_TRH" />
+          <ScalarProperty Name="MLZ_ID" ColumnName="MLZ_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SGLK_MLZ_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_SGLK_MLZ_TNM">
+        <MappingFragment StoreEntitySet="PER_SGLK_MLZ_TNM">
+          <ScalarProperty Name="MLZ_KODU" ColumnName="MLZ_KODU" />
+          <ScalarProperty Name="MLZ_ADI" ColumnName="MLZ_ADI" />
+          <ScalarProperty Name="SURE" ColumnName="SURE" />
+          <ScalarProperty Name="SURE_KODU" ColumnName="SURE_KODU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SGLK_TRM">
+      <EntityTypeMapping TypeName="HbysModel.PER_SGLK_TRM">
+        <MappingFragment StoreEntitySet="PER_SGLK_TRM">
+          <ScalarProperty Name="TRM_ID" ColumnName="TRM_ID" />
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="AKCIGER_GRAFISI" ColumnName="AKCIGER_GRAFISI" />
+          <ScalarProperty Name="PPD" ColumnName="PPD" />
+          <ScalarProperty Name="BOGAZ" ColumnName="BOGAZ" />
+          <ScalarProperty Name="BURUN" ColumnName="BURUN" />
+          <ScalarProperty Name="GAITA" ColumnName="GAITA" />
+          <ScalarProperty Name="GAITA_PARAZIT" ColumnName="GAITA_PARAZIT" />
+          <ScalarProperty Name="ANTI_HIV" ColumnName="ANTI_HIV" />
+          <ScalarProperty Name="ANTI_HCV" ColumnName="ANTI_HCV" />
+          <ScalarProperty Name="HBS_AG" ColumnName="HBS_AG" />
+          <ScalarProperty Name="HBS_AB" ColumnName="HBS_AB" />
+          <ScalarProperty Name="DIGER" ColumnName="DIGER" />
+          <ScalarProperty Name="DEGERLENDIRME" ColumnName="DEGERLENDIRME" />
+          <ScalarProperty Name="DRID" ColumnName="DRID" />
+          <ScalarProperty Name="DRADSOYAD" ColumnName="DRADSOYAD" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+          <ScalarProperty Name="ISLEMTAR" ColumnName="ISLEMTAR" />
+          <ScalarProperty Name="AKTIF" ColumnName="AKTIF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SNF_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_SNF_TNM">
+        <MappingFragment StoreEntitySet="PER_SNF_TNM">
+          <ScalarProperty Name="SNF_KODU" ColumnName="SNF_KODU" />
+          <ScalarProperty Name="SNF_ADI" ColumnName="SNF_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_SNV_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_SNV_TNM">
+        <MappingFragment StoreEntitySet="PER_SNV_TNM">
+          <ScalarProperty Name="SNV_KODU" ColumnName="SNV_KODU" />
+          <ScalarProperty Name="SNV_ADI" ColumnName="SNV_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_STAJ_DRM_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_STAJ_DRM_TNM">
+        <MappingFragment StoreEntitySet="PER_STAJ_DRM_TNM">
+          <ScalarProperty Name="STAJ_DRM_KODU" ColumnName="STAJ_DRM_KODU" />
+          <ScalarProperty Name="STAJ_DRM_ADI" ColumnName="STAJ_DRM_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_TSKLT_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_TSKLT_TNM">
+        <MappingFragment StoreEntitySet="PER_TSKLT_TNM">
+          <ScalarProperty Name="TSKLT_KODU" ColumnName="TSKLT_KODU" />
+          <ScalarProperty Name="TSKLT_ADI" ColumnName="TSKLT_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_ULKE_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_ULKE_TNM">
+        <MappingFragment StoreEntitySet="PER_ULKE_TNM">
+          <ScalarProperty Name="ULKE_KODU" ColumnName="ULKE_KODU" />
+          <ScalarProperty Name="ULKE_ADI" ColumnName="ULKE_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_UNVAN_TNM">
+      <EntityTypeMapping TypeName="HbysModel.PER_UNVAN_TNM">
+        <MappingFragment StoreEntitySet="PER_UNVAN_TNM">
+          <ScalarProperty Name="UNVAN_KODU" ColumnName="UNVAN_KODU" />
+          <ScalarProperty Name="UNVAN_ADI" ColumnName="UNVAN_ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_GCC_GRV">
+      <EntityTypeMapping TypeName="HbysModel.PER_GCC_GRV">
+        <MappingFragment StoreEntitySet="PER_GCC_GRV">
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="BSLM_TRH" ColumnName="BSLM_TRH" />
+          <ScalarProperty Name="BTS_TRH" ColumnName="BTS_TRH" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+          <ScalarProperty Name="SIL" ColumnName="SIL" />
+          <ScalarProperty Name="GOREV_ID" ColumnName="GOREV_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_GRV">
+      <EntityTypeMapping TypeName="HbysModel.PER_GRV">
+        <MappingFragment StoreEntitySet="PER_GRV">
+          <ScalarProperty Name="GRV_ID" ColumnName="GRV_ID" />
+          <ScalarProperty Name="ASIL_PER_ID" ColumnName="ASIL_PER_ID" />
+          <ScalarProperty Name="YEDEK_PER_ID" ColumnName="YEDEK_PER_ID" />
+          <ScalarProperty Name="GRV_ADI" ColumnName="GRV_ADI" />
+          <ScalarProperty Name="BSL_TRH" ColumnName="BSL_TRH" />
+          <ScalarProperty Name="BTS_TRH" ColumnName="BTS_TRH" />
+          <ScalarProperty Name="EKLEYEN_KULID" ColumnName="EKLEYEN_KULID" />
+          <ScalarProperty Name="KAYIT_TRH" ColumnName="KAYIT_TRH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_IZIN_ISTEK">
+      <EntityTypeMapping TypeName="HbysModel.PER_IZIN_ISTEK">
+        <MappingFragment StoreEntitySet="PER_IZIN_ISTEK">
+          <ScalarProperty Name="ISTEK_ID" ColumnName="ISTEK_ID" />
+          <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+          <ScalarProperty Name="IZIN_KODU" ColumnName="IZIN_KODU" />
+          <ScalarProperty Name="IZIN_BSL_TRH" ColumnName="IZIN_BSL_TRH" />
+          <ScalarProperty Name="IZIN_BTS_TRH" ColumnName="IZIN_BTS_TRH" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="IZIN_ISTEK_TRH" ColumnName="IZIN_ISTEK_TRH" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+          <ScalarProperty Name="ISLEMYAPANKULID" ColumnName="ISLEMYAPANKULID" />
+          <ScalarProperty Name="ISLEMYAPANTRH" ColumnName="ISLEMYAPANTRH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KART_KURUM">
+      <EntityTypeMapping TypeName="HbysModel.PER_KART_KURUM">
+        <MappingFragment StoreEntitySet="PER_KART_KURUM">
+          <ScalarProperty Name="KRID" ColumnName="KRID" />
+          <ScalarProperty Name="KR_ADI" ColumnName="KR_ADI" />
+          <ScalarProperty Name="KR_ALT_ADI" ColumnName="KR_ALT_ADI" />
+          <ScalarProperty Name="HASTANE_YONETICISI" ColumnName="HASTANE_YONETICISI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_KART_LOG">
+      <EntityTypeMapping TypeName="HbysModel.PER_KART_LOG">
+        <MappingFragment StoreEntitySet="PER_KART_LOG">
+          <ScalarProperty Name="LOGID" ColumnName="LOGID" />
+          <ScalarProperty Name="KARTID" ColumnName="KARTID" />
+          <ScalarProperty Name="PERID" ColumnName="PERID" />
+          <ScalarProperty Name="KULID" ColumnName="KULID" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PER_NBT_VRD_ADAY_PER" TypeName="HbysModel.PER_NBT_VRD_ADAY_PER" StoreEntitySet="PER_NBT_VRD_ADAY_PER">
+      <EndProperty Name="PER_KIMLIK">
+        <ScalarProperty Name="PER_ID" ColumnName="PER_ID" />
+      </EndProperty>
+      <EndProperty Name="PER_NBT_VRD_TNM">
+        <ScalarProperty Name="VRD_NO" ColumnName="VRD_NO" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

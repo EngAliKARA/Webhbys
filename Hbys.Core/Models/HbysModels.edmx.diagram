@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="56235f2fee5b48e1ba600aa9bb7951ce" Name="Diagram1">
+        <EntityTypeShape EntityType="HbysModel.PER_ADAY_DRM_TNM" Width="1.5" PointX="3.75" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_AILE" Width="1.5" PointX="3" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_AILE_SGLK_MLZ" Width="1.5" PointX="8.25" PointY="46.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_BRANS_TNM" Width="1.5" PointX="3.75" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_CEZA" Width="1.5" PointX="11.25" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_CEZA_TNM" Width="1.5" PointX="9" PointY="62.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_CLS_BCM_TNM" Width="1.5" PointX="3.75" PointY="37.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_DIL_SNV" Width="1.5" PointX="11.25" PointY="42.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_DIL_TNM" Width="1.5" PointX="9" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_EHLIYET" Width="1.5" PointX="8.25" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_EHLIYET_TNM" Width="1.5" PointX="6" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_HRK" Width="1.5" PointX="14.25" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_IL_TNM" Width="1.5" PointX="3.75" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_ILCE_TNM" Width="1.5" PointX="3.75" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_ISTIFA" Width="1.5" PointX="8.25" PointY="55.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_IZIN" Width="1.5" PointX="11.25" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_IZIN_TNM" Width="1.5" PointX="9" PointY="71.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KAN_ISTM_FRM" Width="1.5" PointX="8.25" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KAN_ISTM_FRM_TUR" Width="1.5" PointX="10.5" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KAN_ISTM_TUR_TNM" Width="1.5" PointX="8.25" PointY="79.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KARTLAR" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KIMLIK" Width="1.5" PointX="6" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KRM_BKNLK_TNM" Width="1.5" PointX="1.5" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KRM_BRM_KDR_TNM" Width="1.5" PointX="3.75" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KRM_BRM_KDR_YER" Width="1.5" PointX="8.25" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KRM_BRM_TNM" Width="1.5" PointX="1.5" PointY="55.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KRM_TNM" Width="1.5" PointX="1.5" PointY="58.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KURS" Width="1.5" PointX="14.25" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KURS_TNM" Width="1.5" PointX="12" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MCBR_HZMT_DRM_TNM" Width="1.5" PointX="3.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MSLK_FLYT" Width="1.5" PointX="14.25" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MSLK_FLYT_DETAY_TNM" Width="1.5" PointX="12" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MSLK_FLYT_TNM" Width="1.5" PointX="9.75" PointY="75.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MSLK_FLYT_TUR_TNM" Width="1.5" PointX="7.5" PointY="76.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_MUAYENE" Width="1.5" PointX="8.25" PointY="83.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_NBT_TNM" Width="1.5" PointX="9" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_NBT_VRD" Width="1.5" PointX="13.5" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_NBT_VRD_PER" Width="1.5" PointX="8.25" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_NBT_VRD_TNM" Width="1.5" PointX="11.25" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_ODUL" Width="1.5" PointX="17.25" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_ODUL_TNM" Width="1.5" PointX="15" PointY="58.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL" Width="1.5" PointX="17.25" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_FKLT_BLM_TNM" Width="1.5" PointX="15" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_FKLT_BLM_TUR_TNM" Width="1.5" PointX="12.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_FKLT_TNM" Width="1.5" PointX="12.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_FKLT_TUR_TNM" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_TNM" Width="1.5" PointX="15" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OKUL_TUR_TNM" Width="1.5" PointX="0.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_OZEL_MUAYENE" Width="1.5" PointX="8.25" PointY="104.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_RESIM" Width="1.5" PointX="8.25" PointY="107.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SAKAT_TNM" Width="1.5" PointX="0.75" PointY="47" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SGLK" Width="1.5" PointX="2.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SGLK_MLZ" Width="1.5" PointX="17.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SGLK_MLZ_TNM" Width="1.5" PointX="6" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SGLK_TRM" Width="1.5" PointX="4" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SNF_TNM" Width="1.5" PointX="3.75" PointY="61.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_SNV_TNM" Width="1.5" PointX="9" PointY="59.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_STAJ_DRM_TNM" Width="1.5" PointX="3.75" PointY="63.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_TSKLT_TNM" Width="1.5" PointX="3.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_ULKE_TNM" Width="1.5" PointX="3.75" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_UNVAN_TNM" Width="1.5" PointX="3.75" PointY="70.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_GCC_GRV" Width="1.5" PointX="8.25" PointY="110.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_GRV" Width="1.5" PointX="9.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_IZIN_ISTEK" Width="1.5" PointX="5.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KART_KURUM" Width="1.5" PointX="11" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HbysModel.PER_KART_LOG" Width="1.5" PointX="7.5" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="HbysModel.FK__PER_HRK__ADAY_DR__1EC13716" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__ADAY___30C33EC3" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE___YKN_P__1443A8A3" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE___YKN_P__1537CCDC" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__OKUL_T__0CA286DB" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__OKUL_T__0D96AB14" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__PER_ID__0E8ACF4D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__PER_ID__0F7EF386" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__SAKAT___107317BF" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE__SAKAT___11673BF8" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE___MLZ_K__125B6031" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_AILE___MLZ_K__134F846A" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__BRANS__31B762FC" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_CEZA__CEZA_K__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_CEZA__PER_ID__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_B__CLS_B__3698C0A7" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK_PER_KIMLIK_DRMKODU" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_DIL_S__DIL_K__18143987" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_DIL_S__PER_I__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_DIL_S__SNV_K__19FC81F9" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_EHLIY__EHLIY__1AF0A632" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_EHLIY__EHLIY__1BE4CA6B" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_EHLIY__PER_I__1CD8EEA4" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_EHLIY__PER_I__1DCD12DD" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_HRK__ESKI_UN__22751F6C" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_HRK__PER_ID__236943A5" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_HRK__YENI_UN__2180FB33" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_ILCE___IL_KO__245D67DE" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__NFS_K__2BFE89A6" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__NFS_K__2B0A656D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_ISTIF__PER_I__25518C17" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_IZIN__IZIN_K__247A106C" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_IZIN__PER_ID__2739D489" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KAN_I__ISTM___282DF8C2" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KAN_I__KAN_I__284AA150" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KAN_I__KAN_I__29221CFB" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__MCBR___2FCF1A8A" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__SNF_K__339FAB6E" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__STAJ___2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__TSKLT__2DE6D218" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__ULKE___2CF2ADDF" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KIMLI__UNVAN__32AB8735" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_B__PER_I__37703C52" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KURS__PER_ID__3B40CD36" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___PER_I__3F115E1A" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MUAYE__PER_I__19E77360" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MUAYE__PER_I__48A26249" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MUAYE__PER_I__4C72F32D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_V__NBT_T__45BE5BA9" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_V__NBT_T__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_ODUL__PER_ID__4A8310C6" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL__PER_ID__4F47C5E3" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OZEL___PER_I__4242D080" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_RESIM__PER_I__4707859D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_SGLK___PER_I__58D1301D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK_PER_GCC_GRV_PER_KIMLIK" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK_PER_KIMLIK_PER_KRM_BRM_KDR_TNM" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK_PER_KIMLIK_PER_KRM_BRM_TNM" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK_PER_KIMLIK_PER_SAKAT_TNM" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_T__BKNLK__395884C4" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_B__KRM_B__3493CFA7" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_B__KRM_B__367C1819" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KRM_B__KRM_K__3864608B" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_T__KRM_K__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_KURS__KURS_K__3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___MSLK___3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___MSLK___3D2915A8" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___MSLK___3E1D39E1" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___MSLK___40058253" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_MSLK___MSLK___40F9A68C" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_V__NBT_N__489AC854" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_V__VRD_N__42E1EEFE" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_NBT_VRD_PER__48B770E2" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_ODUL__ODUL_K__498EEC8D" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL__BLM_KO__4B7734FF" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL__FKLT_K__4C6B5938" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL__OKUL_K__4D5F7D71" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL__OKUL_T__4E53A1AA" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL___BLM_T__503BEA1C" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL___FKLT___51300E55" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL___FKLT___5224328E" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL___FKLT___531856C7" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_OKUL___OKUL___55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.FK__PER_SGLK___MLZ_K__57DD0BE4" ManuallyRouted="false" />
+        <AssociationConnector Association="HbysModel.PER_NBT_VRD_ADAY_PER" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

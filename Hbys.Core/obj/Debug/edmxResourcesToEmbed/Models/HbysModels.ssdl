@@ -1,0 +1,2367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HbysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PER_ADAY_DRM_TNM">
+    <Key>
+      <PropertyRef Name="ADAY_DRM_KODU" />
+    </Key>
+    <Property Name="ADAY_DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="ADAY_DRM_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_AILE">
+    <Key>
+      <PropertyRef Name="YKN_PER_ID" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="YKN_TCKIMLIK_NO" Type="varchar" MaxLength="11" />
+    <Property Name="ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOYADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="YKN_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="OKUL_TUR_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="DGM_TRH" Type="datetime" />
+    <Property Name="OLM_TRH" Type="datetime" />
+    <Property Name="CINS_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="SAKAT_DRC_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="BKM_YKM_EH" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="SAKAT_KODU" Type="int" />
+    <Property Name="YKN_PER_ID" Type="int" Nullable="false" />
+    <Property Name="ONCEKI_SOYADI" Type="varchar" MaxLength="50" />
+    <Property Name="MDN_HAL_KODU" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="PER_AILE_SGLK_MLZ">
+    <Key>
+      <PropertyRef Name="MLZ_KODU" />
+      <PropertyRef Name="BELGE_TRH" />
+      <PropertyRef Name="YKN_PER_ID" />
+    </Key>
+    <Property Name="MLZ_KODU" Type="int" Nullable="false" />
+    <Property Name="BELGE_TRH" Type="datetime" Nullable="false" />
+    <Property Name="BELGE_NO" Type="varchar" MaxLength="20" />
+    <Property Name="SURE" Type="int" />
+    <Property Name="SURE_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="TKRR_ALM_TRH" Type="datetime" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="YKN_PER_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_BRANS_TNM">
+    <Key>
+      <PropertyRef Name="BRANS_KODU" />
+    </Key>
+    <Property Name="BRANS_KODU" Type="int" Nullable="false" />
+    <Property Name="BRANS_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_CEZA">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="CEZA_KODU" />
+      <PropertyRef Name="CEZA_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="CEZA_KODU" Type="int" Nullable="false" />
+    <Property Name="CEZA_TRH" Type="datetime" Nullable="false" />
+    <Property Name="CEZA_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_CEZA_TNM">
+    <Key>
+      <PropertyRef Name="CEZA_KODU" />
+    </Key>
+    <Property Name="CEZA_KODU" Type="int" Nullable="false" />
+    <Property Name="CEZA_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_CLS_BCM_TNM">
+    <Key>
+      <PropertyRef Name="CLS_BCM_KODU" />
+    </Key>
+    <Property Name="CLS_BCM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CLS_BCM_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CLS_DRM_KODU" Type="tinyint" Nullable="false" />
+    <Property Name="SIRA_NO" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_DIL_SNV">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="DIL_KODU" />
+      <PropertyRef Name="SNV_KODU" />
+      <PropertyRef Name="SNV_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="DIL_KODU" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="SNV_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="SNV_TRH" Type="datetime" Nullable="false" />
+    <Property Name="NOTU" Type="int" Nullable="false" />
+    <Property Name="DRC_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="BELGE_TURU" Type="char" MaxLength="18" />
+    <Property Name="BELGE_TRH" Type="datetime" />
+    <Property Name="BELGE_NO" Type="varchar" MaxLength="20" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="PDILID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_DIL_TNM">
+    <Key>
+      <PropertyRef Name="DIL_KODU" />
+    </Key>
+    <Property Name="DIL_KODU" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="DIL_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_EHLIYET">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="EHLIYET_KODU" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="EHLIYET_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="BELGE_TRH" Type="datetime" />
+    <Property Name="BELGE_NO" Type="varchar" MaxLength="20" />
+    <Property Name="PEHID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_EHLIYET_TNM">
+    <Key>
+      <PropertyRef Name="EHLIYET_KODU" />
+    </Key>
+    <Property Name="EHLIYET_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="EHLIYET_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HASTANE.dbo.PER_GCC_GRV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PER_GCC_GRV">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="BSLM_TRH" />
+      <PropertyRef Name="BTS_TRH" />
+      <PropertyRef Name="SIL" />
+      <PropertyRef Name="GOREV_ID" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="BSLM_TRH" Type="datetime" Nullable="false" />
+    <Property Name="BTS_TRH" Type="datetime" Nullable="false" />
+    <Property Name="KULID" Type="int" />
+    <Property Name="SIL" Type="bit" Nullable="false" />
+    <Property Name="GOREV_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HASTANE.dbo.PER_GRV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PER_GRV">
+    <Key>
+      <PropertyRef Name="GRV_ID" />
+      <PropertyRef Name="ASIL_PER_ID" />
+      <PropertyRef Name="GRV_ADI" />
+      <PropertyRef Name="BSL_TRH" />
+      <PropertyRef Name="BTS_TRH" />
+      <PropertyRef Name="KAYIT_TRH" />
+    </Key>
+    <Property Name="GRV_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ASIL_PER_ID" Type="int" Nullable="false" />
+    <Property Name="YEDEK_PER_ID" Type="int" />
+    <Property Name="GRV_ADI" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BSL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="BTS_TRH" Type="datetime" Nullable="false" />
+    <Property Name="EKLEYEN_KULID" Type="int" />
+    <Property Name="KAYIT_TRH" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_HRK">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="DEG_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="DEG_TRH" Type="datetime" Nullable="false" />
+    <Property Name="ESKI_KDR" Type="int" />
+    <Property Name="ESKI_DRC" Type="int" />
+    <Property Name="ESKI_KDM" Type="int" />
+    <Property Name="ESKI_KDM_YILI" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="SONRAKI_TERFI_TRH" Type="datetime" />
+    <Property Name="YENI_KDR" Type="int" />
+    <Property Name="YENI_DRC" Type="int" />
+    <Property Name="YENI_KDM" Type="int" />
+    <Property Name="YENI_KDM_YILI" Type="int" />
+    <Property Name="ESKI_UNVAN_KODU" Type="int" />
+    <Property Name="YENI_UNVAN_KODU" Type="int" />
+    <Property Name="YENI_BSLM_TRH" Type="datetime" />
+    <Property Name="ESKI_AYRLS_TRH" Type="datetime" />
+    <Property Name="KYT_TRH" Type="datetime" />
+    <Property Name="KYT_NO" Type="varchar" MaxLength="20" />
+    <Property Name="TKLF_EDEN_ADI" Type="varchar" MaxLength="20" />
+    <Property Name="TKLF_EDEN_SOYADI" Type="varchar" MaxLength="20" />
+    <Property Name="TKLF_EDEN_GRV" Type="varchar" MaxLength="20" />
+    <Property Name="ONAY_PER_ADI" Type="varchar" MaxLength="20" />
+    <Property Name="ONAY_PER_SOYADI" Type="varchar" MaxLength="20" />
+    <Property Name="ONAY_PER_GRV" Type="varchar" MaxLength="20" />
+    <Property Name="ADAY_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="ADAY_SURE" Type="int" />
+    <Property Name="ASK_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="TERFID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_IL_TNM">
+    <Key>
+      <PropertyRef Name="IL_KODU" />
+    </Key>
+    <Property Name="IL_KODU" Type="int" Nullable="false" />
+    <Property Name="IL_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_ILCE_TNM">
+    <Key>
+      <PropertyRef Name="ILCE_KODU" />
+    </Key>
+    <Property Name="ILCE_KODU" Type="int" Nullable="false" />
+    <Property Name="ILCE_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IL_KODU" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_ISTIFA">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="ISTIFA_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="ISTIFA_TRH" Type="datetime" Nullable="false" />
+    <Property Name="DLKC_TRH" Type="datetime" />
+    <Property Name="DLKC_NO" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PER_IZIN">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="IZIN_KODU" />
+      <PropertyRef Name="IZIN_BSL_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="IZIN_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="IZIN_BSL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="IZIN_BTS_TRH" Type="datetime" Nullable="false" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="KLN_IZIN1" Type="int" />
+    <Property Name="KLN_IZIN2" Type="int" />
+    <Property Name="ADRES" Type="varchar" MaxLength="500" />
+    <Property Name="YERINE" Type="varchar" MaxLength="200" />
+    <Property Name="YOL_SURE" Type="int" />
+    <Property Name="GRV_BSL_TRH" Type="datetime" />
+    <Property Name="HZMT_SURE" Type="varchar" MaxLength="20" />
+    <Property Name="IZIN_ISTEK_TRH" Type="datetime" />
+    <Property Name="IZIN_KAYIT_NO" Type="varchar" MaxLength="100" />
+    <Property Name="BRM_AMIRI" Type="varchar" MaxLength="100" />
+    <Property Name="BRM_AMIRI_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="BASHEKIM" Type="varchar" MaxLength="100" />
+    <Property Name="BASHEKIM_YER" Type="varchar" MaxLength="100" />
+    <Property Name="BASHEKIM_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="SGLK_BSK" Type="varchar" MaxLength="100" />
+    <Property Name="SGLK_BSK_YER" Type="varchar" MaxLength="100" />
+    <Property Name="SGLK_BSK_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="KAYMAKAM" Type="varchar" MaxLength="100" />
+    <Property Name="KAYMAKAM_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="DAKIKA_IZIN" Type="int" />
+    <Property Name="GNL_ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="DUZENLEYEN" Type="varchar" MaxLength="100" />
+    <Property Name="DUZENLEYEN_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="IZINID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HASTANE.dbo.PER_IZIN_ISTEK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PER_IZIN_ISTEK">
+    <Key>
+      <PropertyRef Name="ISTEK_ID" />
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="IZIN_KODU" />
+      <PropertyRef Name="IZIN_BSL_TRH" />
+      <PropertyRef Name="IZIN_BTS_TRH" />
+      <PropertyRef Name="IZIN_ISTEK_TRH" />
+    </Key>
+    <Property Name="ISTEK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="IZIN_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="IZIN_BSL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="IZIN_BTS_TRH" Type="datetime" Nullable="false" />
+    <Property Name="ADRES" Type="varchar" MaxLength="500" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="IZIN_ISTEK_TRH" Type="datetime" Nullable="false" />
+    <Property Name="KULID" Type="int" />
+    <Property Name="ISLEMYAPANKULID" Type="int" />
+    <Property Name="ISLEMYAPANTRH" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PER_IZIN_TNM">
+    <Key>
+      <PropertyRef Name="IZIN_KODU" />
+    </Key>
+    <Property Name="IZIN_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="IZIN_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UCRETSIZ_EH" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PLN_EH" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="IZIN_TURU" Type="varchar" MaxLength="10" />
+    <Property Name="IZIN_SURE" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_KAN_ISTM_FRM">
+    <Key>
+      <PropertyRef Name="KAN_ISTM_FRM_NO" />
+    </Key>
+    <Property Name="KAN_ISTM_FRM_NO" Type="int" Nullable="false" />
+    <Property Name="TCKIMLIK_NO" Type="varchar" MaxLength="11" />
+    <Property Name="ADI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SOYADI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CINS_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="TESHIS" Type="varchar" MaxLength="100" />
+    <Property Name="ONCE_TRNSFZYN_YPLD_EH" Type="varchar" MaxLength="1" />
+    <Property Name="ISTM_TRH" Type="datetime" />
+    <Property Name="UNITE" Type="varchar" MaxLength="20" />
+    <Property Name="SERVIS" Type="varchar" MaxLength="50" />
+    <Property Name="HASTA_ODA_NO" Type="varchar" MaxLength="20" />
+    <Property Name="KAN_ISTM_NDN" Type="varchar" MaxLength="100" />
+    <Property Name="KAN_GRP_KODU" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRNSFZYN_TRH" Type="datetime" />
+    <Property Name="ISTM_YPN_DKTR_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_KAN_ISTM_FRM_TUR">
+    <Key>
+      <PropertyRef Name="KAN_ISTM_FRM_NO" />
+      <PropertyRef Name="KAN_ISTM_TUR_KODU" />
+    </Key>
+    <Property Name="KAN_ISTM_FRM_NO" Type="int" Nullable="false" />
+    <Property Name="KAN_ISTM_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="MKTR" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KAN_ISTM_TUR_TNM">
+    <Key>
+      <PropertyRef Name="KAN_ISTM_TUR_KODU" />
+    </Key>
+    <Property Name="KAN_ISTM_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="KAN_ISTM_TUR_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HASTANE.dbo.PER_KART_KURUM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PER_KART_KURUM">
+    <Key>
+      <PropertyRef Name="KRID" />
+      <PropertyRef Name="KR_ADI" />
+      <PropertyRef Name="KR_ALT_ADI" />
+    </Key>
+    <Property Name="KRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KR_ADI" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="KR_ALT_ADI" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="HASTANE_YONETICISI" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HASTANE.dbo.PER_KART_LOG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PER_KART_LOG">
+    <Key>
+      <PropertyRef Name="LOGID" />
+    </Key>
+    <Property Name="LOGID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KARTID" Type="int" />
+    <Property Name="PERID" Type="int" />
+    <Property Name="KULID" Type="int" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="PER_KARTLAR">
+    <Key>
+      <PropertyRef Name="KARTID" />
+    </Key>
+    <Property Name="KARTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PERID" Type="int" Nullable="false" />
+    <Property Name="KARTTURU" Type="int" />
+    <Property Name="GOREVI" Type="varchar" MaxLength="150" />
+    <Property Name="BIRIMI" Type="varchar" MaxLength="150" />
+    <Property Name="VERILIS_NEDEN" Type="int" />
+    <Property Name="VERILIS_TARIH" Type="datetime" />
+    <Property Name="KULID" Type="int" />
+    <Property Name="DURUM" Type="bit" />
+  </EntityType>
+  <EntityType Name="PER_KIMLIK">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+    </Key>
+    <Property Name="TCKIMLIK_NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EMSAN_NO" Type="varchar" MaxLength="20" />
+    <Property Name="ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOYADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BABA_ADI" Type="varchar" MaxLength="50" />
+    <Property Name="ANA_ADI" Type="varchar" MaxLength="50" />
+    <Property Name="ONCEKI_SOYADI" Type="varchar" MaxLength="50" />
+    <Property Name="DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="DGM_TRH" Type="datetime" />
+    <Property Name="SNF_KODU" Type="int" />
+    <Property Name="UNVAN_KODU" Type="int" />
+    <Property Name="BRANS_KODU" Type="int" />
+    <Property Name="ADAY_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="MCBR_HZMT_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="STAJ_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="MCBR_HZMT_BTS_TRH" Type="datetime" />
+    <Property Name="STAJ_BTS_TRH" Type="datetime" />
+    <Property Name="MMR_BSL_TRH" Type="datetime" />
+    <Property Name="TSKLT_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="CINS_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="NFS_CZD_SERI" Type="varchar" MaxLength="5" />
+    <Property Name="NFS_CZD_NO" Type="varchar" MaxLength="10" />
+    <Property Name="MDN_HAL_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="DINI" Type="varchar" MaxLength="20" />
+    <Property Name="ULKE_KODU" Type="varchar" MaxLength="3" />
+    <Property Name="KAN_GRP_KODU" Type="varchar" MaxLength="6" />
+    <Property Name="NFS_KYT_IL_KODU" Type="int" />
+    <Property Name="NFS_KYT_ILCE_KODU" Type="int" />
+    <Property Name="NFS_KYT_KOY_MAH" Type="varchar" MaxLength="50" />
+    <Property Name="NFS_KYT_CILT_NO" Type="varchar" MaxLength="10" />
+    <Property Name="NFS_KYT_AILE_SIRA_NO" Type="varchar" MaxLength="10" />
+    <Property Name="NFS_KYT_SIRA_NO" Type="varchar" MaxLength="10" />
+    <Property Name="NFS_CZD_VRN_YER" Type="varchar" MaxLength="50" />
+    <Property Name="NFS_CZD_VRL_NDN" Type="varchar" MaxLength="20" />
+    <Property Name="NFS_CZD_VRL_TRH" Type="datetime" />
+    <Property Name="NFS_CZD_KYT_NO" Type="varchar" MaxLength="20" />
+    <Property Name="DGM_YERI" Type="varchar" MaxLength="20" />
+    <Property Name="ADR_DAIMI" Type="varchar" MaxLength="200" />
+    <Property Name="ADR_IS" Type="varchar" MaxLength="200" />
+    <Property Name="TLF_EV" Type="varchar" MaxLength="20" />
+    <Property Name="TLF_IS" Type="varchar" MaxLength="20" />
+    <Property Name="TLF_CEP" Type="varchar" MaxLength="20" />
+    <Property Name="ADR_EV" Type="varchar" MaxLength="200" />
+    <Property Name="VERGI_NO" Type="varchar" MaxLength="20" />
+    <Property Name="KRM_SCL_NO" Type="varchar" MaxLength="20" />
+    <Property Name="ASKR_DNS_TRH" Type="datetime" />
+    <Property Name="ASKR_GDS_TRH" Type="datetime" />
+    <Property Name="ASKR_DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="KRM_BRM_KODU" Type="int" />
+    <Property Name="KRM_BRM_KDR_KODU" Type="int" />
+    <Property Name="KDM_YILI" Type="int" />
+    <Property Name="KDR_DRC" Type="int" />
+    <Property Name="KDR_KDM" Type="int" />
+    <Property Name="PER_SIRA_NO" Type="int" />
+    <Property Name="SAKAT_KODU" Type="int" />
+    <Property Name="SAKAT_DRC_KODU" Type="varchar" MaxLength="10" />
+    <Property Name="KTL_TRH" Type="datetime" />
+    <Property Name="AYR_TRH" Type="datetime" />
+    <Property Name="EPOSTA" Type="varchar" MaxLength="100" />
+    <Property Name="SEND_ID" Type="smallint" />
+    <Property Name="HASTALIK_BAGISIKLIK" Type="varchar" MaxLength="500" />
+    <Property Name="PDKS_KIMLIK" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="PDKS_KART_NO" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="PDKS_SIFRE" Type="nvarchar" MaxLength="10" />
+    <Property Name="TLF_DAHILI" Type="varchar" MaxLength="20" />
+    <Property Name="DURUM" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_KRM_BKNLK_TNM">
+    <Key>
+      <PropertyRef Name="BKNLK_KODU" />
+    </Key>
+    <Property Name="BKNLK_KODU" Type="int" Nullable="false" />
+    <Property Name="BKNLK_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KRM_BRM_KDR_TNM">
+    <Key>
+      <PropertyRef Name="KRM_BRM_KDR_KODU" />
+    </Key>
+    <Property Name="KRM_BRM_KDR_KODU" Type="int" Nullable="false" />
+    <Property Name="KRM_BRM_KDR_ADI" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="KDR_STNDRT" Type="int" Nullable="false" />
+    <Property Name="KRM_BRM_KODU" Type="int" Nullable="false" />
+    <Property Name="DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KRM_BRM_KDR_YER">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="KRM_BRM_KDR_KODU" />
+      <PropertyRef Name="GRV_BSL_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="KRM_BRM_KDR_KODU" Type="int" Nullable="false" />
+    <Property Name="GRV_BSL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="GRV_BTS_TRH" Type="datetime" />
+    <Property Name="CLS_BCM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KRM_BRM_TNM">
+    <Key>
+      <PropertyRef Name="KRM_BRM_KODU" />
+    </Key>
+    <Property Name="KRM_BRM_KODU" Type="int" Nullable="false" />
+    <Property Name="KRM_BRM_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KRM_KODU" Type="int" Nullable="false" />
+    <Property Name="DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KRM_TNM">
+    <Key>
+      <PropertyRef Name="KRM_KODU" />
+    </Key>
+    <Property Name="KRM_KODU" Type="int" Nullable="false" />
+    <Property Name="KRM_ADI" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="KAMU_OZEL" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="TLF" Type="varchar" MaxLength="20" />
+    <Property Name="FAKS" Type="varchar" MaxLength="20" />
+    <Property Name="ADR" Type="varchar" MaxLength="200" />
+    <Property Name="BKNLK_KODU" Type="int" />
+    <Property Name="LOGO" Type="image" />
+    <Property Name="IZIN_RPR_MKM_ADI" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="PER_KURS">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="KURS_KODU" />
+      <PropertyRef Name="KURS_BSL_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="KURS_KODU" Type="int" Nullable="false" />
+    <Property Name="KURS_BSL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="KURS_BTS_TRH" Type="datetime" />
+    <Property Name="DRC_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="SIRA_NO" Type="int" />
+    <Property Name="KURS_KRM_ADI" Type="varchar" MaxLength="200" />
+    <Property Name="KURS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_KURS_TNM">
+    <Key>
+      <PropertyRef Name="KURS_KODU" />
+    </Key>
+    <Property Name="KURS_KODU" Type="int" Nullable="false" />
+    <Property Name="KURS_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_MCBR_HZMT_DRM_TNM">
+    <Key>
+      <PropertyRef Name="MCBR_HZMT_DRM_KODU" />
+    </Key>
+    <Property Name="MCBR_HZMT_DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="MCBR_HZMT_DRM_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_MSLK_FLYT">
+    <Key>
+      <PropertyRef Name="MSLK_FLYT_ID" />
+    </Key>
+    <Property Name="MSLK_FLYT_ID" Type="int" Nullable="false" />
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_KODU" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_DETAY_KODU" Type="int" />
+    <Property Name="GCR_TRH" Type="datetime" />
+    <Property Name="ISIM_SIRA_NO" Type="int" />
+    <Property Name="ATIF_EH" Type="varchar" MaxLength="1" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="PUAN" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_MSLK_FLYT_DETAY_TNM">
+    <Key>
+      <PropertyRef Name="MSLK_FLYT_DETAY_KODU" />
+    </Key>
+    <Property Name="MSLK_FLYT_DETAY_KODU" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_DETAY_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MSLK_FLYT_KODU" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_MSLK_FLYT_TNM">
+    <Key>
+      <PropertyRef Name="MSLK_FLYT_KODU" />
+    </Key>
+    <Property Name="MSLK_FLYT_KODU" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MSLK_FLYT_TUR_KODU" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_MSLK_FLYT_TUR_TNM">
+    <Key>
+      <PropertyRef Name="MSLK_FLYT_TUR_KODU" />
+    </Key>
+    <Property Name="MSLK_FLYT_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="MSLK_FLYT_TUR_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_MUAYENE">
+    <Key>
+      <PropertyRef Name="MUAYENE_ID" />
+    </Key>
+    <Property Name="MUAYENE_ID" Type="int" Nullable="false" />
+    <Property Name="MUAYENE_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="KRM_ADI" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TCKIMLIK_NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MMR_ADI_SOYADI" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="HST_ADI_SOYADI" Type="char" MaxLength="200" />
+    <Property Name="GRV_ADI" Type="varchar" MaxLength="200" />
+    <Property Name="KRM_SCL_NO" Type="varchar" MaxLength="20" />
+    <Property Name="KDR_DRC" Type="varchar" MaxLength="20" />
+    <Property Name="ADRES" Type="varchar" MaxLength="500" />
+    <Property Name="YTK_ADI_SOYADI" Type="varchar" MaxLength="100" />
+    <Property Name="YTK_UNVAN" Type="varchar" MaxLength="100" />
+    <Property Name="KRM_KYT_TRH" Type="datetime" />
+    <Property Name="KRM_KYT_NO" Type="int" />
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_NBT_TNM">
+    <Key>
+      <PropertyRef Name="NBT_NO" />
+    </Key>
+    <Property Name="NBT_NO" Type="int" Nullable="false" />
+    <Property Name="NBT_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KRM_KODU" Type="int" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="IMZA_PER_AD_SOYAD1" Type="varchar" MaxLength="50" />
+    <Property Name="IMZA_PER_UNVAN1" Type="varchar" MaxLength="20" />
+    <Property Name="IMZA_PER_GRV1" Type="varchar" MaxLength="20" />
+    <Property Name="IMZA_PER_AD_SOYAD2" Type="varchar" MaxLength="50" />
+    <Property Name="IMZA_PER_UNVAN2" Type="varchar" MaxLength="20" />
+    <Property Name="IMZA_PER_GRV2" Type="varchar" MaxLength="20" />
+    <Property Name="IMZA_PER_AD_SOYAD3" Type="varchar" MaxLength="50" />
+    <Property Name="IMZA_PER_UNVAN3" Type="varchar" MaxLength="20" />
+    <Property Name="IMZA_PER_GRV3" Type="varchar" MaxLength="20" />
+    <Property Name="S112_GONDERILSIN" Type="bit" Nullable="false" />
+    <Property Name="S112_BOLUM_ID" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_NBT_VRD">
+    <Key>
+      <PropertyRef Name="VRD_NO" />
+      <PropertyRef Name="YIL" />
+      <PropertyRef Name="AY" />
+    </Key>
+    <Property Name="VRD_NO" Type="int" Nullable="false" />
+    <Property Name="YIL" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="AY" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="ONAY_EH" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="ONAY_TRH" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PER_NBT_VRD_ADAY_PER">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="VRD_NO" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="VRD_NO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_NBT_VRD_PER">
+    <Key>
+      <PropertyRef Name="VRD_NO" />
+      <PropertyRef Name="YIL" />
+      <PropertyRef Name="AY" />
+      <PropertyRef Name="GUN" />
+      <PropertyRef Name="SIRA_NO" />
+    </Key>
+    <Property Name="VRD_NO" Type="int" Nullable="false" />
+    <Property Name="YIL" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="AY" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="NBT_TTN_PER_ID" Type="int" Nullable="false" />
+    <Property Name="GUN" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="SIRA_NO" Type="int" Nullable="false" />
+    <Property Name="NBT_TTCK_PER_ID" Type="int" />
+    <Property Name="NBT_DGS_NDN" Type="varchar" MaxLength="500" />
+    <Property Name="BSL_SAAT" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="BTS_SAAT" Type="numeric" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="PER_NBT_VRD_TNM">
+    <Key>
+      <PropertyRef Name="VRD_NO" />
+    </Key>
+    <Property Name="NBT_NO" Type="int" Nullable="false" />
+    <Property Name="VRD_NO" Type="int" Nullable="false" />
+    <Property Name="BSL_SAAT" Type="varchar" MaxLength="5" />
+    <Property Name="BTS_SAAT" Type="varchar" MaxLength="5" />
+    <Property Name="SURE" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="SURE_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="DRM_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="PER_MKTR" Type="int" Nullable="false" />
+    <Property Name="ACIL_KODU" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PER_ODUL">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="ODUL_KODU" />
+      <PropertyRef Name="ODUL_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="ODUL_KODU" Type="int" Nullable="false" />
+    <Property Name="ODUL_TRH" Type="datetime" Nullable="false" />
+    <Property Name="ODUL_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_ODUL_TNM">
+    <Key>
+      <PropertyRef Name="ODUL_KODU" />
+    </Key>
+    <Property Name="ODUL_KODU" Type="int" Nullable="false" />
+    <Property Name="ODUL_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL">
+    <Key>
+      <PropertyRef Name="TAHSIL_ID" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="OKUL_TUR_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="OKUL_KODU" Type="int" Nullable="false" />
+    <Property Name="TAHSIL_ID" Type="int" Nullable="false" />
+    <Property Name="FKLT_KODU" Type="int" />
+    <Property Name="BLM_KODU" Type="int" />
+    <Property Name="BTS_TRH" Type="datetime" />
+    <Property Name="BSL_TRH" Type="datetime" />
+    <Property Name="DIPLOMA_NO" Type="varchar" MaxLength="50" />
+    <Property Name="DIPLOMA_NOTU" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_FKLT_BLM_TNM">
+    <Key>
+      <PropertyRef Name="BLM_KODU" />
+    </Key>
+    <Property Name="BLM_KODU" Type="int" Nullable="false" />
+    <Property Name="BLM_TUR_KODU" Type="int" />
+    <Property Name="FKLT_KODU" Type="int" />
+    <Property Name="BLM_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_FKLT_BLM_TUR_TNM">
+    <Key>
+      <PropertyRef Name="BLM_TUR_KODU" />
+    </Key>
+    <Property Name="BLM_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="BLM_TUR_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FKLT_TUR_KODU" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_FKLT_TNM">
+    <Key>
+      <PropertyRef Name="FKLT_KODU" />
+    </Key>
+    <Property Name="OKUL_KODU" Type="int" />
+    <Property Name="FKLT_KODU" Type="int" Nullable="false" />
+    <Property Name="FKLT_TUR_KODU" Type="int" />
+    <Property Name="FKLT_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_FKLT_TUR_TNM">
+    <Key>
+      <PropertyRef Name="FKLT_TUR_KODU" />
+    </Key>
+    <Property Name="FKLT_TUR_KODU" Type="int" Nullable="false" />
+    <Property Name="FKLT_TUR_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_TNM">
+    <Key>
+      <PropertyRef Name="OKUL_KODU" />
+    </Key>
+    <Property Name="OKUL_KODU" Type="int" Nullable="false" />
+    <Property Name="OKUL_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OKUL_TUR_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OKUL_TUR_TNM">
+    <Key>
+      <PropertyRef Name="OKUL_TUR_KODU" />
+    </Key>
+    <Property Name="OKUL_TUR_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="OKUL_TUR_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_OZEL_MUAYENE">
+    <Key>
+      <PropertyRef Name="MUAYENE_KODU" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="MUAYENE_KODU" Type="int" Nullable="false" />
+    <Property Name="MUAYENE_ADI" Type="varchar" MaxLength="100" />
+    <Property Name="ADR" Type="varchar" MaxLength="500" />
+    <Property Name="TLF" Type="varchar" MaxLength="20" />
+    <Property Name="BSL_TRH" Type="datetime" />
+    <Property Name="BTS_TRH" Type="datetime" />
+    <Property Name="FAKS" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PER_RESIM">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="RESIM" Type="image" />
+    <Property Name="RESIM_TIPI" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="PER_SAKAT_TNM">
+    <Key>
+      <PropertyRef Name="SAKAT_KODU" />
+    </Key>
+    <Property Name="SAKAT_KODU" Type="int" Nullable="false" />
+    <Property Name="SAKAT_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_SGLK">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="KRONIK" Type="varchar" MaxLength="500" />
+    <Property Name="DEVAMLI_ILAC" Type="varchar" MaxLength="500" />
+    <Property Name="LATEX" Type="varchar" MaxLength="500" />
+    <Property Name="SIGARA" Type="varchar" MaxLength="100" />
+    <Property Name="BOY" Type="int" />
+    <Property Name="KILO" Type="int" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="KULID" Type="int" />
+  </EntityType>
+  <EntityType Name="PER_SGLK_MLZ">
+    <Key>
+      <PropertyRef Name="PER_ID" />
+      <PropertyRef Name="MLZ_KODU" />
+      <PropertyRef Name="BELGE_TRH" />
+    </Key>
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="MLZ_KODU" Type="int" Nullable="false" />
+    <Property Name="BELGE_TRH" Type="datetime" Nullable="false" />
+    <Property Name="BELGE_NO" Type="varchar" MaxLength="20" />
+    <Property Name="SURE" Type="int" />
+    <Property Name="SURE_KODU" Type="varchar" MaxLength="1" />
+    <Property Name="ACIKLAMA" Type="varchar" MaxLength="500" />
+    <Property Name="TKRR_ALM_TRH" Type="char" MaxLength="18" />
+    <Property Name="MLZ_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_SGLK_MLZ_TNM">
+    <Key>
+      <PropertyRef Name="MLZ_KODU" />
+    </Key>
+    <Property Name="MLZ_KODU" Type="int" Nullable="false" />
+    <Property Name="MLZ_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SURE" Type="int" Nullable="false" />
+    <Property Name="SURE_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_SGLK_TRM">
+    <Key>
+      <PropertyRef Name="TRM_ID" />
+    </Key>
+    <Property Name="TRM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PER_ID" Type="int" Nullable="false" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="AKCIGER_GRAFISI" Type="varchar" MaxLength="500" />
+    <Property Name="PPD" Type="varchar" MaxLength="500" />
+    <Property Name="BOGAZ" Type="varchar" MaxLength="200" />
+    <Property Name="BURUN" Type="varchar" MaxLength="200" />
+    <Property Name="GAITA" Type="varchar" MaxLength="200" />
+    <Property Name="GAITA_PARAZIT" Type="varchar" MaxLength="200" />
+    <Property Name="ANTI_HIV" Type="varchar" MaxLength="200" />
+    <Property Name="ANTI_HCV" Type="varchar" MaxLength="200" />
+    <Property Name="HBS_AG" Type="varchar" MaxLength="200" />
+    <Property Name="HBS_AB" Type="varchar" MaxLength="200" />
+    <Property Name="DIGER" Type="varchar" MaxLength="500" />
+    <Property Name="DEGERLENDIRME" Type="varchar" MaxLength="500" />
+    <Property Name="DRID" Type="int" />
+    <Property Name="DRADSOYAD" Type="varchar" MaxLength="200" />
+    <Property Name="KULID" Type="int" />
+    <Property Name="ISLEMTAR" Type="datetime" />
+    <Property Name="AKTIF" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_SNF_TNM">
+    <Key>
+      <PropertyRef Name="SNF_KODU" />
+    </Key>
+    <Property Name="SNF_KODU" Type="int" Nullable="false" />
+    <Property Name="SNF_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_SNV_TNM">
+    <Key>
+      <PropertyRef Name="SNV_KODU" />
+    </Key>
+    <Property Name="SNV_KODU" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="SNV_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_STAJ_DRM_TNM">
+    <Key>
+      <PropertyRef Name="STAJ_DRM_KODU" />
+    </Key>
+    <Property Name="STAJ_DRM_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="STAJ_DRM_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_TSKLT_TNM">
+    <Key>
+      <PropertyRef Name="TSKLT_KODU" />
+    </Key>
+    <Property Name="TSKLT_KODU" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="TSKLT_ADI" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_ULKE_TNM">
+    <Key>
+      <PropertyRef Name="ULKE_KODU" />
+    </Key>
+    <Property Name="ULKE_KODU" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="ULKE_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PER_UNVAN_TNM">
+    <Key>
+      <PropertyRef Name="UNVAN_KODU" />
+    </Key>
+    <Property Name="UNVAN_KODU" Type="int" Nullable="false" />
+    <Property Name="UNVAN_ADI" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__PER_AILE___MLZ_K__125B6031">
+    <End Role="PER_SGLK_MLZ_TNM" Type="Self.PER_SGLK_MLZ_TNM" Multiplicity="1" />
+    <End Role="PER_AILE_SGLK_MLZ" Type="Self.PER_AILE_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SGLK_MLZ_TNM">
+        <PropertyRef Name="MLZ_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE_SGLK_MLZ">
+        <PropertyRef Name="MLZ_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE___MLZ_K__134F846A">
+    <End Role="PER_SGLK_MLZ_TNM" Type="Self.PER_SGLK_MLZ_TNM" Multiplicity="1" />
+    <End Role="PER_AILE_SGLK_MLZ" Type="Self.PER_AILE_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SGLK_MLZ_TNM">
+        <PropertyRef Name="MLZ_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE_SGLK_MLZ">
+        <PropertyRef Name="MLZ_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE___YKN_P__1443A8A3">
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="1" />
+    <End Role="PER_AILE_SGLK_MLZ" Type="Self.PER_AILE_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_AILE">
+        <PropertyRef Name="YKN_PER_ID" />
+      </Principal>
+      <Dependent Role="PER_AILE_SGLK_MLZ">
+        <PropertyRef Name="YKN_PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE___YKN_P__1537CCDC">
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="1" />
+    <End Role="PER_AILE_SGLK_MLZ" Type="Self.PER_AILE_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_AILE">
+        <PropertyRef Name="YKN_PER_ID" />
+      </Principal>
+      <Dependent Role="PER_AILE_SGLK_MLZ">
+        <PropertyRef Name="YKN_PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__OKUL_T__0CA286DB">
+    <End Role="PER_OKUL_TUR_TNM" Type="Self.PER_OKUL_TUR_TNM" Multiplicity="0..1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_TUR_TNM">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__OKUL_T__0D96AB14">
+    <End Role="PER_OKUL_TUR_TNM" Type="Self.PER_OKUL_TUR_TNM" Multiplicity="0..1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_TUR_TNM">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__PER_ID__0E8ACF4D">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__PER_ID__0F7EF386">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__SAKAT___107317BF">
+    <End Role="PER_SAKAT_TNM" Type="Self.PER_SAKAT_TNM" Multiplicity="0..1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SAKAT_TNM">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_AILE__SAKAT___11673BF8">
+    <End Role="PER_SAKAT_TNM" Type="Self.PER_SAKAT_TNM" Multiplicity="0..1" />
+    <End Role="PER_AILE" Type="Self.PER_AILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SAKAT_TNM">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Principal>
+      <Dependent Role="PER_AILE">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_CEZA__CEZA_K__1BC821DD">
+    <End Role="PER_CEZA_TNM" Type="Self.PER_CEZA_TNM" Multiplicity="1" />
+    <End Role="PER_CEZA" Type="Self.PER_CEZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_CEZA_TNM">
+        <PropertyRef Name="CEZA_KODU" />
+      </Principal>
+      <Dependent Role="PER_CEZA">
+        <PropertyRef Name="CEZA_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_CEZA__PER_ID__1CBC4616">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_CEZA" Type="Self.PER_CEZA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_CEZA">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_DIL_S__DIL_K__18143987">
+    <End Role="PER_DIL_TNM" Type="Self.PER_DIL_TNM" Multiplicity="1" />
+    <End Role="PER_DIL_SNV" Type="Self.PER_DIL_SNV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_DIL_TNM">
+        <PropertyRef Name="DIL_KODU" />
+      </Principal>
+      <Dependent Role="PER_DIL_SNV">
+        <PropertyRef Name="DIL_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_DIL_S__PER_I__1F98B2C1">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_DIL_SNV" Type="Self.PER_DIL_SNV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_DIL_SNV">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_DIL_S__SNV_K__19FC81F9">
+    <End Role="PER_SNV_TNM" Type="Self.PER_SNV_TNM" Multiplicity="1" />
+    <End Role="PER_DIL_SNV" Type="Self.PER_DIL_SNV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SNV_TNM">
+        <PropertyRef Name="SNV_KODU" />
+      </Principal>
+      <Dependent Role="PER_DIL_SNV">
+        <PropertyRef Name="SNV_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_EHLIY__EHLIY__1AF0A632">
+    <End Role="PER_EHLIYET_TNM" Type="Self.PER_EHLIYET_TNM" Multiplicity="1" />
+    <End Role="PER_EHLIYET" Type="Self.PER_EHLIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_EHLIYET_TNM">
+        <PropertyRef Name="EHLIYET_KODU" />
+      </Principal>
+      <Dependent Role="PER_EHLIYET">
+        <PropertyRef Name="EHLIYET_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_EHLIY__EHLIY__1BE4CA6B">
+    <End Role="PER_EHLIYET_TNM" Type="Self.PER_EHLIYET_TNM" Multiplicity="1" />
+    <End Role="PER_EHLIYET" Type="Self.PER_EHLIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_EHLIYET_TNM">
+        <PropertyRef Name="EHLIYET_KODU" />
+      </Principal>
+      <Dependent Role="PER_EHLIYET">
+        <PropertyRef Name="EHLIYET_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_EHLIY__PER_I__1CD8EEA4">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_EHLIYET" Type="Self.PER_EHLIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_EHLIYET">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_EHLIY__PER_I__1DCD12DD">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_EHLIYET" Type="Self.PER_EHLIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_EHLIYET">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_HRK__ADAY_DR__1EC13716">
+    <End Role="PER_ADAY_DRM_TNM" Type="Self.PER_ADAY_DRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_HRK" Type="Self.PER_HRK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_ADAY_DRM_TNM">
+        <PropertyRef Name="ADAY_DRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_HRK">
+        <PropertyRef Name="ADAY_DRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_HRK__ESKI_UN__22751F6C">
+    <End Role="PER_UNVAN_TNM" Type="Self.PER_UNVAN_TNM" Multiplicity="0..1" />
+    <End Role="PER_HRK" Type="Self.PER_HRK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_UNVAN_TNM">
+        <PropertyRef Name="UNVAN_KODU" />
+      </Principal>
+      <Dependent Role="PER_HRK">
+        <PropertyRef Name="ESKI_UNVAN_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_HRK__PER_ID__236943A5">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_HRK" Type="Self.PER_HRK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_HRK">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_HRK__YENI_UN__2180FB33">
+    <End Role="PER_UNVAN_TNM" Type="Self.PER_UNVAN_TNM" Multiplicity="0..1" />
+    <End Role="PER_HRK" Type="Self.PER_HRK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_UNVAN_TNM">
+        <PropertyRef Name="UNVAN_KODU" />
+      </Principal>
+      <Dependent Role="PER_HRK">
+        <PropertyRef Name="YENI_UNVAN_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_ILCE___IL_KO__245D67DE">
+    <End Role="PER_IL_TNM" Type="Self.PER_IL_TNM" Multiplicity="0..1" />
+    <End Role="PER_ILCE_TNM" Type="Self.PER_ILCE_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_IL_TNM">
+        <PropertyRef Name="IL_KODU" />
+      </Principal>
+      <Dependent Role="PER_ILCE_TNM">
+        <PropertyRef Name="IL_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_ISTIF__PER_I__25518C17">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_ISTIFA" Type="Self.PER_ISTIFA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_ISTIFA">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_IZIN__IZIN_K__247A106C">
+    <End Role="PER_IZIN_TNM" Type="Self.PER_IZIN_TNM" Multiplicity="1" />
+    <End Role="PER_IZIN" Type="Self.PER_IZIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_IZIN_TNM">
+        <PropertyRef Name="IZIN_KODU" />
+      </Principal>
+      <Dependent Role="PER_IZIN">
+        <PropertyRef Name="IZIN_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_IZIN__PER_ID__2739D489">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_IZIN" Type="Self.PER_IZIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_IZIN">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KAN_I__ISTM___282DF8C2">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="0..1" />
+    <End Role="PER_KAN_ISTM_FRM" Type="Self.PER_KAN_ISTM_FRM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_KAN_ISTM_FRM">
+        <PropertyRef Name="ISTM_YPN_DKTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KAN_I__KAN_I__284AA150">
+    <End Role="PER_KAN_ISTM_FRM" Type="Self.PER_KAN_ISTM_FRM" Multiplicity="1" />
+    <End Role="PER_KAN_ISTM_FRM_TUR" Type="Self.PER_KAN_ISTM_FRM_TUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KAN_ISTM_FRM">
+        <PropertyRef Name="KAN_ISTM_FRM_NO" />
+      </Principal>
+      <Dependent Role="PER_KAN_ISTM_FRM_TUR">
+        <PropertyRef Name="KAN_ISTM_FRM_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KAN_I__KAN_I__29221CFB">
+    <End Role="PER_KAN_ISTM_TUR_TNM" Type="Self.PER_KAN_ISTM_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_KAN_ISTM_FRM_TUR" Type="Self.PER_KAN_ISTM_FRM_TUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KAN_ISTM_TUR_TNM">
+        <PropertyRef Name="KAN_ISTM_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_KAN_ISTM_FRM_TUR">
+        <PropertyRef Name="KAN_ISTM_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__ADAY___30C33EC3">
+    <End Role="PER_ADAY_DRM_TNM" Type="Self.PER_ADAY_DRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_ADAY_DRM_TNM">
+        <PropertyRef Name="ADAY_DRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="ADAY_DRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__BRANS__31B762FC">
+    <End Role="PER_BRANS_TNM" Type="Self.PER_BRANS_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_BRANS_TNM">
+        <PropertyRef Name="BRANS_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="BRANS_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__MCBR___2FCF1A8A">
+    <End Role="PER_MCBR_HZMT_DRM_TNM" Type="Self.PER_MCBR_HZMT_DRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MCBR_HZMT_DRM_TNM">
+        <PropertyRef Name="MCBR_HZMT_DRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="MCBR_HZMT_DRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__NFS_K__2B0A656D">
+    <End Role="PER_ILCE_TNM" Type="Self.PER_ILCE_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_ILCE_TNM">
+        <PropertyRef Name="ILCE_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="NFS_KYT_ILCE_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__NFS_K__2BFE89A6">
+    <End Role="PER_IL_TNM" Type="Self.PER_IL_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_IL_TNM">
+        <PropertyRef Name="IL_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="NFS_KYT_IL_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__SNF_K__339FAB6E">
+    <End Role="PER_SNF_TNM" Type="Self.PER_SNF_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SNF_TNM">
+        <PropertyRef Name="SNF_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="SNF_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__STAJ___2EDAF651">
+    <End Role="PER_STAJ_DRM_TNM" Type="Self.PER_STAJ_DRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_STAJ_DRM_TNM">
+        <PropertyRef Name="STAJ_DRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="STAJ_DRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__TSKLT__2DE6D218">
+    <End Role="PER_TSKLT_TNM" Type="Self.PER_TSKLT_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_TSKLT_TNM">
+        <PropertyRef Name="TSKLT_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="TSKLT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__ULKE___2CF2ADDF">
+    <End Role="PER_ULKE_TNM" Type="Self.PER_ULKE_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_ULKE_TNM">
+        <PropertyRef Name="ULKE_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="ULKE_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KIMLI__UNVAN__32AB8735">
+    <End Role="PER_UNVAN_TNM" Type="Self.PER_UNVAN_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_UNVAN_TNM">
+        <PropertyRef Name="UNVAN_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="UNVAN_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_B__CLS_B__3698C0A7">
+    <End Role="PER_CLS_BCM_TNM" Type="Self.PER_CLS_BCM_TNM" Multiplicity="1" />
+    <End Role="PER_KRM_BRM_KDR_YER" Type="Self.PER_KRM_BRM_KDR_YER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_CLS_BCM_TNM">
+        <PropertyRef Name="CLS_BCM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KRM_BRM_KDR_YER">
+        <PropertyRef Name="CLS_BCM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_B__KRM_B__3493CFA7">
+    <End Role="PER_KRM_BRM_TNM" Type="Self.PER_KRM_BRM_TNM" Multiplicity="1" />
+    <End Role="PER_KRM_BRM_KDR_TNM" Type="Self.PER_KRM_BRM_KDR_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_BRM_TNM">
+        <PropertyRef Name="KRM_BRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KRM_BRM_KDR_TNM">
+        <PropertyRef Name="KRM_BRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_B__KRM_B__367C1819">
+    <End Role="PER_KRM_BRM_KDR_TNM" Type="Self.PER_KRM_BRM_KDR_TNM" Multiplicity="1" />
+    <End Role="PER_KRM_BRM_KDR_YER" Type="Self.PER_KRM_BRM_KDR_YER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_BRM_KDR_TNM">
+        <PropertyRef Name="KRM_BRM_KDR_KODU" />
+      </Principal>
+      <Dependent Role="PER_KRM_BRM_KDR_YER">
+        <PropertyRef Name="KRM_BRM_KDR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_B__KRM_K__3864608B">
+    <End Role="PER_KRM_TNM" Type="Self.PER_KRM_TNM" Multiplicity="1" />
+    <End Role="PER_KRM_BRM_TNM" Type="Self.PER_KRM_BRM_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_TNM">
+        <PropertyRef Name="KRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KRM_BRM_TNM">
+        <PropertyRef Name="KRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_B__PER_I__37703C52">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_KRM_BRM_KDR_YER" Type="Self.PER_KRM_BRM_KDR_YER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_KRM_BRM_KDR_YER">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KRM_T__BKNLK__395884C4">
+    <End Role="PER_KRM_BKNLK_TNM" Type="Self.PER_KRM_BKNLK_TNM" Multiplicity="0..1" />
+    <End Role="PER_KRM_TNM" Type="Self.PER_KRM_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_BKNLK_TNM">
+        <PropertyRef Name="BKNLK_KODU" />
+      </Principal>
+      <Dependent Role="PER_KRM_TNM">
+        <PropertyRef Name="BKNLK_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KURS__KURS_K__3A4CA8FD">
+    <End Role="PER_KURS_TNM" Type="Self.PER_KURS_TNM" Multiplicity="1" />
+    <End Role="PER_KURS" Type="Self.PER_KURS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KURS_TNM">
+        <PropertyRef Name="KURS_KODU" />
+      </Principal>
+      <Dependent Role="PER_KURS">
+        <PropertyRef Name="KURS_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_KURS__PER_ID__3B40CD36">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_KURS" Type="Self.PER_KURS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_KURS">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___MSLK___3C34F16F">
+    <End Role="PER_MSLK_FLYT_DETAY_TNM" Type="Self.PER_MSLK_FLYT_DETAY_TNM" Multiplicity="0..1" />
+    <End Role="PER_MSLK_FLYT" Type="Self.PER_MSLK_FLYT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MSLK_FLYT_DETAY_TNM">
+        <PropertyRef Name="MSLK_FLYT_DETAY_KODU" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT">
+        <PropertyRef Name="MSLK_FLYT_DETAY_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___MSLK___3D2915A8">
+    <End Role="PER_MSLK_FLYT_TNM" Type="Self.PER_MSLK_FLYT_TNM" Multiplicity="1" />
+    <End Role="PER_MSLK_FLYT" Type="Self.PER_MSLK_FLYT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MSLK_FLYT_TNM">
+        <PropertyRef Name="MSLK_FLYT_KODU" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT">
+        <PropertyRef Name="MSLK_FLYT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___MSLK___3E1D39E1">
+    <End Role="PER_MSLK_FLYT_TUR_TNM" Type="Self.PER_MSLK_FLYT_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_MSLK_FLYT" Type="Self.PER_MSLK_FLYT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MSLK_FLYT_TUR_TNM">
+        <PropertyRef Name="MSLK_FLYT_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT">
+        <PropertyRef Name="MSLK_FLYT_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___MSLK___40058253">
+    <End Role="PER_MSLK_FLYT_TNM" Type="Self.PER_MSLK_FLYT_TNM" Multiplicity="1" />
+    <End Role="PER_MSLK_FLYT_DETAY_TNM" Type="Self.PER_MSLK_FLYT_DETAY_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MSLK_FLYT_TNM">
+        <PropertyRef Name="MSLK_FLYT_KODU" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT_DETAY_TNM">
+        <PropertyRef Name="MSLK_FLYT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___MSLK___40F9A68C">
+    <End Role="PER_MSLK_FLYT_TUR_TNM" Type="Self.PER_MSLK_FLYT_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_MSLK_FLYT_TNM" Type="Self.PER_MSLK_FLYT_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_MSLK_FLYT_TUR_TNM">
+        <PropertyRef Name="MSLK_FLYT_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT_TNM">
+        <PropertyRef Name="MSLK_FLYT_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MSLK___PER_I__3F115E1A">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_MSLK_FLYT" Type="Self.PER_MSLK_FLYT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_MSLK_FLYT">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MUAYE__PER_I__19E77360">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_MUAYENE" Type="Self.PER_MUAYENE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_MUAYENE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MUAYE__PER_I__48A26249">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_MUAYENE" Type="Self.PER_MUAYENE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_MUAYENE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_MUAYE__PER_I__4C72F32D">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_MUAYENE" Type="Self.PER_MUAYENE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_MUAYENE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_T__KRM_K__41EDCAC5">
+    <End Role="PER_KRM_TNM" Type="Self.PER_KRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_NBT_TNM" Type="Self.PER_NBT_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_TNM">
+        <PropertyRef Name="KRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_NBT_TNM">
+        <PropertyRef Name="KRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__NBT_N__489AC854">
+    <End Role="PER_NBT_TNM" Type="Self.PER_NBT_TNM" Multiplicity="1" />
+    <End Role="PER_NBT_VRD_TNM" Type="Self.PER_NBT_VRD_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_NBT_TNM">
+        <PropertyRef Name="NBT_NO" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_TNM">
+        <PropertyRef Name="NBT_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__NBT_T__45BE5BA9">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="0..1" />
+    <End Role="PER_NBT_VRD_PER" Type="Self.PER_NBT_VRD_PER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_PER">
+        <PropertyRef Name="NBT_TTCK_PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__NBT_T__46B27FE2">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_NBT_VRD_PER" Type="Self.PER_NBT_VRD_PER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_PER">
+        <PropertyRef Name="NBT_TTN_PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__PER_I__44CA3770">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_NBT_VRD_ADAY_PER" Type="Self.PER_NBT_VRD_ADAY_PER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_ADAY_PER">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__VRD_N__42E1EEFE">
+    <End Role="PER_NBT_VRD_TNM" Type="Self.PER_NBT_VRD_TNM" Multiplicity="1" />
+    <End Role="PER_NBT_VRD" Type="Self.PER_NBT_VRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_NBT_VRD_TNM">
+        <PropertyRef Name="VRD_NO" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD">
+        <PropertyRef Name="VRD_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_V__VRD_N__43D61337">
+    <End Role="PER_NBT_VRD_TNM" Type="Self.PER_NBT_VRD_TNM" Multiplicity="1" />
+    <End Role="PER_NBT_VRD_ADAY_PER" Type="Self.PER_NBT_VRD_ADAY_PER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_NBT_VRD_TNM">
+        <PropertyRef Name="VRD_NO" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_ADAY_PER">
+        <PropertyRef Name="VRD_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_NBT_VRD_PER__48B770E2">
+    <End Role="PER_NBT_VRD" Type="Self.PER_NBT_VRD" Multiplicity="1" />
+    <End Role="PER_NBT_VRD_PER" Type="Self.PER_NBT_VRD_PER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_NBT_VRD">
+        <PropertyRef Name="VRD_NO" />
+        <PropertyRef Name="YIL" />
+        <PropertyRef Name="AY" />
+      </Principal>
+      <Dependent Role="PER_NBT_VRD_PER">
+        <PropertyRef Name="VRD_NO" />
+        <PropertyRef Name="YIL" />
+        <PropertyRef Name="AY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_ODUL__ODUL_K__498EEC8D">
+    <End Role="PER_ODUL_TNM" Type="Self.PER_ODUL_TNM" Multiplicity="1" />
+    <End Role="PER_ODUL" Type="Self.PER_ODUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_ODUL_TNM">
+        <PropertyRef Name="ODUL_KODU" />
+      </Principal>
+      <Dependent Role="PER_ODUL">
+        <PropertyRef Name="ODUL_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_ODUL__PER_ID__4A8310C6">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_ODUL" Type="Self.PER_ODUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_ODUL">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL___BLM_T__503BEA1C">
+    <End Role="PER_OKUL_FKLT_BLM_TUR_TNM" Type="Self.PER_OKUL_FKLT_BLM_TUR_TNM" Multiplicity="0..1" />
+    <End Role="PER_OKUL_FKLT_BLM_TNM" Type="Self.PER_OKUL_FKLT_BLM_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_BLM_TUR_TNM">
+        <PropertyRef Name="BLM_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL_FKLT_BLM_TNM">
+        <PropertyRef Name="BLM_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL___FKLT___51300E55">
+    <End Role="PER_OKUL_FKLT_TNM" Type="Self.PER_OKUL_FKLT_TNM" Multiplicity="0..1" />
+    <End Role="PER_OKUL_FKLT_BLM_TNM" Type="Self.PER_OKUL_FKLT_BLM_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_TNM">
+        <PropertyRef Name="FKLT_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL_FKLT_BLM_TNM">
+        <PropertyRef Name="FKLT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL___FKLT___5224328E">
+    <End Role="PER_OKUL_FKLT_TUR_TNM" Type="Self.PER_OKUL_FKLT_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_OKUL_FKLT_BLM_TUR_TNM" Type="Self.PER_OKUL_FKLT_BLM_TUR_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_TUR_TNM">
+        <PropertyRef Name="FKLT_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL_FKLT_BLM_TUR_TNM">
+        <PropertyRef Name="FKLT_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL___FKLT___531856C7">
+    <End Role="PER_OKUL_FKLT_TUR_TNM" Type="Self.PER_OKUL_FKLT_TUR_TNM" Multiplicity="0..1" />
+    <End Role="PER_OKUL_FKLT_TNM" Type="Self.PER_OKUL_FKLT_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_TUR_TNM">
+        <PropertyRef Name="FKLT_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL_FKLT_TNM">
+        <PropertyRef Name="FKLT_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL___OKUL___55009F39">
+    <End Role="PER_OKUL_TUR_TNM" Type="Self.PER_OKUL_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_OKUL_TNM" Type="Self.PER_OKUL_TNM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_TUR_TNM">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL_TNM">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL__BLM_KO__4B7734FF">
+    <End Role="PER_OKUL_FKLT_BLM_TNM" Type="Self.PER_OKUL_FKLT_BLM_TNM" Multiplicity="0..1" />
+    <End Role="PER_OKUL" Type="Self.PER_OKUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_BLM_TNM">
+        <PropertyRef Name="BLM_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL">
+        <PropertyRef Name="BLM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL__FKLT_K__4C6B5938">
+    <End Role="PER_OKUL_FKLT_TNM" Type="Self.PER_OKUL_FKLT_TNM" Multiplicity="0..1" />
+    <End Role="PER_OKUL" Type="Self.PER_OKUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_FKLT_TNM">
+        <PropertyRef Name="FKLT_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL">
+        <PropertyRef Name="FKLT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL__OKUL_K__4D5F7D71">
+    <End Role="PER_OKUL_TNM" Type="Self.PER_OKUL_TNM" Multiplicity="1" />
+    <End Role="PER_OKUL" Type="Self.PER_OKUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_TNM">
+        <PropertyRef Name="OKUL_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL">
+        <PropertyRef Name="OKUL_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL__OKUL_T__4E53A1AA">
+    <End Role="PER_OKUL_TUR_TNM" Type="Self.PER_OKUL_TUR_TNM" Multiplicity="1" />
+    <End Role="PER_OKUL" Type="Self.PER_OKUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_OKUL_TUR_TNM">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Principal>
+      <Dependent Role="PER_OKUL">
+        <PropertyRef Name="OKUL_TUR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OKUL__PER_ID__4F47C5E3">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_OKUL" Type="Self.PER_OKUL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_OKUL">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_OZEL___PER_I__4242D080">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_OZEL_MUAYENE" Type="Self.PER_OZEL_MUAYENE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_OZEL_MUAYENE">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_RESIM__PER_I__4707859D">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_RESIM" Type="Self.PER_RESIM" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_RESIM">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_SGLK___MLZ_K__57DD0BE4">
+    <End Role="PER_SGLK_MLZ_TNM" Type="Self.PER_SGLK_MLZ_TNM" Multiplicity="1" />
+    <End Role="PER_SGLK_MLZ" Type="Self.PER_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SGLK_MLZ_TNM">
+        <PropertyRef Name="MLZ_KODU" />
+      </Principal>
+      <Dependent Role="PER_SGLK_MLZ">
+        <PropertyRef Name="MLZ_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PER_SGLK___PER_I__58D1301D">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_SGLK_MLZ" Type="Self.PER_SGLK_MLZ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_SGLK_MLZ">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_GCC_GRV_PER_KIMLIK">
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="1" />
+    <End Role="PER_GCC_GRV" Type="Self.PER_GCC_GRV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KIMLIK">
+        <PropertyRef Name="PER_ID" />
+      </Principal>
+      <Dependent Role="PER_GCC_GRV">
+        <PropertyRef Name="PER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_KIMLIK_DRMKODU">
+    <End Role="PER_CLS_BCM_TNM" Type="Self.PER_CLS_BCM_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_CLS_BCM_TNM">
+        <PropertyRef Name="CLS_BCM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="DRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_KIMLIK_PER_KRM_BRM_KDR_TNM">
+    <End Role="PER_KRM_BRM_KDR_TNM" Type="Self.PER_KRM_BRM_KDR_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_BRM_KDR_TNM">
+        <PropertyRef Name="KRM_BRM_KDR_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="KRM_BRM_KDR_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_KIMLIK_PER_KRM_BRM_TNM">
+    <End Role="PER_KRM_BRM_TNM" Type="Self.PER_KRM_BRM_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_KRM_BRM_TNM">
+        <PropertyRef Name="KRM_BRM_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="KRM_BRM_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_KIMLIK_PER_SAKAT_TNM">
+    <End Role="PER_SAKAT_TNM" Type="Self.PER_SAKAT_TNM" Multiplicity="0..1" />
+    <End Role="PER_KIMLIK" Type="Self.PER_KIMLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PER_SAKAT_TNM">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Principal>
+      <Dependent Role="PER_KIMLIK">
+        <PropertyRef Name="SAKAT_KODU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HbysModelStoreContainer">
+    <EntitySet Name="PER_ADAY_DRM_TNM" EntityType="Self.PER_ADAY_DRM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_AILE" EntityType="Self.PER_AILE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_AILE_SGLK_MLZ" EntityType="Self.PER_AILE_SGLK_MLZ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_BRANS_TNM" EntityType="Self.PER_BRANS_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_CEZA" EntityType="Self.PER_CEZA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_CEZA_TNM" EntityType="Self.PER_CEZA_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_CLS_BCM_TNM" EntityType="Self.PER_CLS_BCM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_DIL_SNV" EntityType="Self.PER_DIL_SNV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_DIL_TNM" EntityType="Self.PER_DIL_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_EHLIYET" EntityType="Self.PER_EHLIYET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_EHLIYET_TNM" EntityType="Self.PER_EHLIYET_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_HRK" EntityType="Self.PER_HRK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_IL_TNM" EntityType="Self.PER_IL_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_ILCE_TNM" EntityType="Self.PER_ILCE_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_ISTIFA" EntityType="Self.PER_ISTIFA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_IZIN" EntityType="Self.PER_IZIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_IZIN_TNM" EntityType="Self.PER_IZIN_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KAN_ISTM_FRM" EntityType="Self.PER_KAN_ISTM_FRM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KAN_ISTM_FRM_TUR" EntityType="Self.PER_KAN_ISTM_FRM_TUR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KAN_ISTM_TUR_TNM" EntityType="Self.PER_KAN_ISTM_TUR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KARTLAR" EntityType="Self.PER_KARTLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KIMLIK" EntityType="Self.PER_KIMLIK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KRM_BKNLK_TNM" EntityType="Self.PER_KRM_BKNLK_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KRM_BRM_KDR_TNM" EntityType="Self.PER_KRM_BRM_KDR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KRM_BRM_KDR_YER" EntityType="Self.PER_KRM_BRM_KDR_YER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KRM_BRM_TNM" EntityType="Self.PER_KRM_BRM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KRM_TNM" EntityType="Self.PER_KRM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KURS" EntityType="Self.PER_KURS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_KURS_TNM" EntityType="Self.PER_KURS_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MCBR_HZMT_DRM_TNM" EntityType="Self.PER_MCBR_HZMT_DRM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MSLK_FLYT" EntityType="Self.PER_MSLK_FLYT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MSLK_FLYT_DETAY_TNM" EntityType="Self.PER_MSLK_FLYT_DETAY_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MSLK_FLYT_TNM" EntityType="Self.PER_MSLK_FLYT_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MSLK_FLYT_TUR_TNM" EntityType="Self.PER_MSLK_FLYT_TUR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_MUAYENE" EntityType="Self.PER_MUAYENE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_NBT_TNM" EntityType="Self.PER_NBT_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_NBT_VRD" EntityType="Self.PER_NBT_VRD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_NBT_VRD_ADAY_PER" EntityType="Self.PER_NBT_VRD_ADAY_PER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_NBT_VRD_PER" EntityType="Self.PER_NBT_VRD_PER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_NBT_VRD_TNM" EntityType="Self.PER_NBT_VRD_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_ODUL" EntityType="Self.PER_ODUL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_ODUL_TNM" EntityType="Self.PER_ODUL_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL" EntityType="Self.PER_OKUL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_FKLT_BLM_TNM" EntityType="Self.PER_OKUL_FKLT_BLM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_FKLT_BLM_TUR_TNM" EntityType="Self.PER_OKUL_FKLT_BLM_TUR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_FKLT_TNM" EntityType="Self.PER_OKUL_FKLT_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_FKLT_TUR_TNM" EntityType="Self.PER_OKUL_FKLT_TUR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_TNM" EntityType="Self.PER_OKUL_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OKUL_TUR_TNM" EntityType="Self.PER_OKUL_TUR_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_OZEL_MUAYENE" EntityType="Self.PER_OZEL_MUAYENE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_RESIM" EntityType="Self.PER_RESIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SAKAT_TNM" EntityType="Self.PER_SAKAT_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SGLK" EntityType="Self.PER_SGLK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SGLK_MLZ" EntityType="Self.PER_SGLK_MLZ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SGLK_MLZ_TNM" EntityType="Self.PER_SGLK_MLZ_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SGLK_TRM" EntityType="Self.PER_SGLK_TRM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SNF_TNM" EntityType="Self.PER_SNF_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_SNV_TNM" EntityType="Self.PER_SNV_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_STAJ_DRM_TNM" EntityType="Self.PER_STAJ_DRM_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_TSKLT_TNM" EntityType="Self.PER_TSKLT_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_ULKE_TNM" EntityType="Self.PER_ULKE_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_UNVAN_TNM" EntityType="Self.PER_UNVAN_TNM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_GCC_GRV" EntityType="Self.PER_GCC_GRV" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PER_GCC_GRV].[PER_ID] AS [PER_ID], 
+    [PER_GCC_GRV].[BSLM_TRH] AS [BSLM_TRH], 
+    [PER_GCC_GRV].[BTS_TRH] AS [BTS_TRH], 
+    [PER_GCC_GRV].[KULID] AS [KULID], 
+    [PER_GCC_GRV].[SIL] AS [SIL], 
+    [PER_GCC_GRV].[GOREV_ID] AS [GOREV_ID]
+    FROM [dbo].[PER_GCC_GRV] AS [PER_GCC_GRV]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PER_GRV" EntityType="Self.PER_GRV" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PER_GRV].[GRV_ID] AS [GRV_ID], 
+    [PER_GRV].[ASIL_PER_ID] AS [ASIL_PER_ID], 
+    [PER_GRV].[YEDEK_PER_ID] AS [YEDEK_PER_ID], 
+    [PER_GRV].[GRV_ADI] AS [GRV_ADI], 
+    [PER_GRV].[BSL_TRH] AS [BSL_TRH], 
+    [PER_GRV].[BTS_TRH] AS [BTS_TRH], 
+    [PER_GRV].[EKLEYEN_KULID] AS [EKLEYEN_KULID], 
+    [PER_GRV].[KAYIT_TRH] AS [KAYIT_TRH]
+    FROM [dbo].[PER_GRV] AS [PER_GRV]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PER_IZIN_ISTEK" EntityType="Self.PER_IZIN_ISTEK" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PER_IZIN_ISTEK].[ISTEK_ID] AS [ISTEK_ID], 
+    [PER_IZIN_ISTEK].[PER_ID] AS [PER_ID], 
+    [PER_IZIN_ISTEK].[IZIN_KODU] AS [IZIN_KODU], 
+    [PER_IZIN_ISTEK].[IZIN_BSL_TRH] AS [IZIN_BSL_TRH], 
+    [PER_IZIN_ISTEK].[IZIN_BTS_TRH] AS [IZIN_BTS_TRH], 
+    [PER_IZIN_ISTEK].[ADRES] AS [ADRES], 
+    [PER_IZIN_ISTEK].[ACIKLAMA] AS [ACIKLAMA], 
+    [PER_IZIN_ISTEK].[IZIN_ISTEK_TRH] AS [IZIN_ISTEK_TRH], 
+    [PER_IZIN_ISTEK].[KULID] AS [KULID], 
+    [PER_IZIN_ISTEK].[ISLEMYAPANKULID] AS [ISLEMYAPANKULID], 
+    [PER_IZIN_ISTEK].[ISLEMYAPANTRH] AS [ISLEMYAPANTRH]
+    FROM [dbo].[PER_IZIN_ISTEK] AS [PER_IZIN_ISTEK]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PER_KART_KURUM" EntityType="Self.PER_KART_KURUM" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PER_KART_KURUM].[KRID] AS [KRID], 
+    [PER_KART_KURUM].[KR_ADI] AS [KR_ADI], 
+    [PER_KART_KURUM].[KR_ALT_ADI] AS [KR_ALT_ADI], 
+    [PER_KART_KURUM].[HASTANE_YONETICISI] AS [HASTANE_YONETICISI]
+    FROM [dbo].[PER_KART_KURUM] AS [PER_KART_KURUM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PER_KART_LOG" EntityType="Self.PER_KART_LOG" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PER_KART_LOG].[LOGID] AS [LOGID], 
+    [PER_KART_LOG].[KARTID] AS [KARTID], 
+    [PER_KART_LOG].[PERID] AS [PERID], 
+    [PER_KART_LOG].[KULID] AS [KULID], 
+    [PER_KART_LOG].[TARIH] AS [TARIH], 
+    [PER_KART_LOG].[ACIKLAMA] AS [ACIKLAMA]
+    FROM [dbo].[PER_KART_LOG] AS [PER_KART_LOG]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__PER_AILE___MLZ_K__125B6031" Association="Self.FK__PER_AILE___MLZ_K__125B6031">
+      <End Role="PER_SGLK_MLZ_TNM" EntitySet="PER_SGLK_MLZ_TNM" />
+      <End Role="PER_AILE_SGLK_MLZ" EntitySet="PER_AILE_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE___MLZ_K__134F846A" Association="Self.FK__PER_AILE___MLZ_K__134F846A">
+      <End Role="PER_SGLK_MLZ_TNM" EntitySet="PER_SGLK_MLZ_TNM" />
+      <End Role="PER_AILE_SGLK_MLZ" EntitySet="PER_AILE_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE___YKN_P__1443A8A3" Association="Self.FK__PER_AILE___YKN_P__1443A8A3">
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+      <End Role="PER_AILE_SGLK_MLZ" EntitySet="PER_AILE_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE___YKN_P__1537CCDC" Association="Self.FK__PER_AILE___YKN_P__1537CCDC">
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+      <End Role="PER_AILE_SGLK_MLZ" EntitySet="PER_AILE_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__OKUL_T__0CA286DB" Association="Self.FK__PER_AILE__OKUL_T__0CA286DB">
+      <End Role="PER_OKUL_TUR_TNM" EntitySet="PER_OKUL_TUR_TNM" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__OKUL_T__0D96AB14" Association="Self.FK__PER_AILE__OKUL_T__0D96AB14">
+      <End Role="PER_OKUL_TUR_TNM" EntitySet="PER_OKUL_TUR_TNM" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__PER_ID__0E8ACF4D" Association="Self.FK__PER_AILE__PER_ID__0E8ACF4D">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__PER_ID__0F7EF386" Association="Self.FK__PER_AILE__PER_ID__0F7EF386">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__SAKAT___107317BF" Association="Self.FK__PER_AILE__SAKAT___107317BF">
+      <End Role="PER_SAKAT_TNM" EntitySet="PER_SAKAT_TNM" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_AILE__SAKAT___11673BF8" Association="Self.FK__PER_AILE__SAKAT___11673BF8">
+      <End Role="PER_SAKAT_TNM" EntitySet="PER_SAKAT_TNM" />
+      <End Role="PER_AILE" EntitySet="PER_AILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_CEZA__CEZA_K__1BC821DD" Association="Self.FK__PER_CEZA__CEZA_K__1BC821DD">
+      <End Role="PER_CEZA_TNM" EntitySet="PER_CEZA_TNM" />
+      <End Role="PER_CEZA" EntitySet="PER_CEZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_CEZA__PER_ID__1CBC4616" Association="Self.FK__PER_CEZA__PER_ID__1CBC4616">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_CEZA" EntitySet="PER_CEZA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_DIL_S__DIL_K__18143987" Association="Self.FK__PER_DIL_S__DIL_K__18143987">
+      <End Role="PER_DIL_TNM" EntitySet="PER_DIL_TNM" />
+      <End Role="PER_DIL_SNV" EntitySet="PER_DIL_SNV" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_DIL_S__PER_I__1F98B2C1" Association="Self.FK__PER_DIL_S__PER_I__1F98B2C1">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_DIL_SNV" EntitySet="PER_DIL_SNV" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_DIL_S__SNV_K__19FC81F9" Association="Self.FK__PER_DIL_S__SNV_K__19FC81F9">
+      <End Role="PER_SNV_TNM" EntitySet="PER_SNV_TNM" />
+      <End Role="PER_DIL_SNV" EntitySet="PER_DIL_SNV" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_EHLIY__EHLIY__1AF0A632" Association="Self.FK__PER_EHLIY__EHLIY__1AF0A632">
+      <End Role="PER_EHLIYET_TNM" EntitySet="PER_EHLIYET_TNM" />
+      <End Role="PER_EHLIYET" EntitySet="PER_EHLIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_EHLIY__EHLIY__1BE4CA6B" Association="Self.FK__PER_EHLIY__EHLIY__1BE4CA6B">
+      <End Role="PER_EHLIYET_TNM" EntitySet="PER_EHLIYET_TNM" />
+      <End Role="PER_EHLIYET" EntitySet="PER_EHLIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_EHLIY__PER_I__1CD8EEA4" Association="Self.FK__PER_EHLIY__PER_I__1CD8EEA4">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_EHLIYET" EntitySet="PER_EHLIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_EHLIY__PER_I__1DCD12DD" Association="Self.FK__PER_EHLIY__PER_I__1DCD12DD">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_EHLIYET" EntitySet="PER_EHLIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_HRK__ADAY_DR__1EC13716" Association="Self.FK__PER_HRK__ADAY_DR__1EC13716">
+      <End Role="PER_ADAY_DRM_TNM" EntitySet="PER_ADAY_DRM_TNM" />
+      <End Role="PER_HRK" EntitySet="PER_HRK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_HRK__ESKI_UN__22751F6C" Association="Self.FK__PER_HRK__ESKI_UN__22751F6C">
+      <End Role="PER_UNVAN_TNM" EntitySet="PER_UNVAN_TNM" />
+      <End Role="PER_HRK" EntitySet="PER_HRK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_HRK__PER_ID__236943A5" Association="Self.FK__PER_HRK__PER_ID__236943A5">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_HRK" EntitySet="PER_HRK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_HRK__YENI_UN__2180FB33" Association="Self.FK__PER_HRK__YENI_UN__2180FB33">
+      <End Role="PER_UNVAN_TNM" EntitySet="PER_UNVAN_TNM" />
+      <End Role="PER_HRK" EntitySet="PER_HRK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_ILCE___IL_KO__245D67DE" Association="Self.FK__PER_ILCE___IL_KO__245D67DE">
+      <End Role="PER_IL_TNM" EntitySet="PER_IL_TNM" />
+      <End Role="PER_ILCE_TNM" EntitySet="PER_ILCE_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_ISTIF__PER_I__25518C17" Association="Self.FK__PER_ISTIF__PER_I__25518C17">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_ISTIFA" EntitySet="PER_ISTIFA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_IZIN__IZIN_K__247A106C" Association="Self.FK__PER_IZIN__IZIN_K__247A106C">
+      <End Role="PER_IZIN_TNM" EntitySet="PER_IZIN_TNM" />
+      <End Role="PER_IZIN" EntitySet="PER_IZIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_IZIN__PER_ID__2739D489" Association="Self.FK__PER_IZIN__PER_ID__2739D489">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_IZIN" EntitySet="PER_IZIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KAN_I__ISTM___282DF8C2" Association="Self.FK__PER_KAN_I__ISTM___282DF8C2">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_KAN_ISTM_FRM" EntitySet="PER_KAN_ISTM_FRM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KAN_I__KAN_I__284AA150" Association="Self.FK__PER_KAN_I__KAN_I__284AA150">
+      <End Role="PER_KAN_ISTM_FRM" EntitySet="PER_KAN_ISTM_FRM" />
+      <End Role="PER_KAN_ISTM_FRM_TUR" EntitySet="PER_KAN_ISTM_FRM_TUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KAN_I__KAN_I__29221CFB" Association="Self.FK__PER_KAN_I__KAN_I__29221CFB">
+      <End Role="PER_KAN_ISTM_TUR_TNM" EntitySet="PER_KAN_ISTM_TUR_TNM" />
+      <End Role="PER_KAN_ISTM_FRM_TUR" EntitySet="PER_KAN_ISTM_FRM_TUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__ADAY___30C33EC3" Association="Self.FK__PER_KIMLI__ADAY___30C33EC3">
+      <End Role="PER_ADAY_DRM_TNM" EntitySet="PER_ADAY_DRM_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__BRANS__31B762FC" Association="Self.FK__PER_KIMLI__BRANS__31B762FC">
+      <End Role="PER_BRANS_TNM" EntitySet="PER_BRANS_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__MCBR___2FCF1A8A" Association="Self.FK__PER_KIMLI__MCBR___2FCF1A8A">
+      <End Role="PER_MCBR_HZMT_DRM_TNM" EntitySet="PER_MCBR_HZMT_DRM_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__NFS_K__2B0A656D" Association="Self.FK__PER_KIMLI__NFS_K__2B0A656D">
+      <End Role="PER_ILCE_TNM" EntitySet="PER_ILCE_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__NFS_K__2BFE89A6" Association="Self.FK__PER_KIMLI__NFS_K__2BFE89A6">
+      <End Role="PER_IL_TNM" EntitySet="PER_IL_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__SNF_K__339FAB6E" Association="Self.FK__PER_KIMLI__SNF_K__339FAB6E">
+      <End Role="PER_SNF_TNM" EntitySet="PER_SNF_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__STAJ___2EDAF651" Association="Self.FK__PER_KIMLI__STAJ___2EDAF651">
+      <End Role="PER_STAJ_DRM_TNM" EntitySet="PER_STAJ_DRM_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__TSKLT__2DE6D218" Association="Self.FK__PER_KIMLI__TSKLT__2DE6D218">
+      <End Role="PER_TSKLT_TNM" EntitySet="PER_TSKLT_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__ULKE___2CF2ADDF" Association="Self.FK__PER_KIMLI__ULKE___2CF2ADDF">
+      <End Role="PER_ULKE_TNM" EntitySet="PER_ULKE_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KIMLI__UNVAN__32AB8735" Association="Self.FK__PER_KIMLI__UNVAN__32AB8735">
+      <End Role="PER_UNVAN_TNM" EntitySet="PER_UNVAN_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_B__CLS_B__3698C0A7" Association="Self.FK__PER_KRM_B__CLS_B__3698C0A7">
+      <End Role="PER_CLS_BCM_TNM" EntitySet="PER_CLS_BCM_TNM" />
+      <End Role="PER_KRM_BRM_KDR_YER" EntitySet="PER_KRM_BRM_KDR_YER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_B__KRM_B__3493CFA7" Association="Self.FK__PER_KRM_B__KRM_B__3493CFA7">
+      <End Role="PER_KRM_BRM_TNM" EntitySet="PER_KRM_BRM_TNM" />
+      <End Role="PER_KRM_BRM_KDR_TNM" EntitySet="PER_KRM_BRM_KDR_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_B__KRM_B__367C1819" Association="Self.FK__PER_KRM_B__KRM_B__367C1819">
+      <End Role="PER_KRM_BRM_KDR_TNM" EntitySet="PER_KRM_BRM_KDR_TNM" />
+      <End Role="PER_KRM_BRM_KDR_YER" EntitySet="PER_KRM_BRM_KDR_YER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_B__KRM_K__3864608B" Association="Self.FK__PER_KRM_B__KRM_K__3864608B">
+      <End Role="PER_KRM_TNM" EntitySet="PER_KRM_TNM" />
+      <End Role="PER_KRM_BRM_TNM" EntitySet="PER_KRM_BRM_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_B__PER_I__37703C52" Association="Self.FK__PER_KRM_B__PER_I__37703C52">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_KRM_BRM_KDR_YER" EntitySet="PER_KRM_BRM_KDR_YER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KRM_T__BKNLK__395884C4" Association="Self.FK__PER_KRM_T__BKNLK__395884C4">
+      <End Role="PER_KRM_BKNLK_TNM" EntitySet="PER_KRM_BKNLK_TNM" />
+      <End Role="PER_KRM_TNM" EntitySet="PER_KRM_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KURS__KURS_K__3A4CA8FD" Association="Self.FK__PER_KURS__KURS_K__3A4CA8FD">
+      <End Role="PER_KURS_TNM" EntitySet="PER_KURS_TNM" />
+      <End Role="PER_KURS" EntitySet="PER_KURS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_KURS__PER_ID__3B40CD36" Association="Self.FK__PER_KURS__PER_ID__3B40CD36">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_KURS" EntitySet="PER_KURS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___MSLK___3C34F16F" Association="Self.FK__PER_MSLK___MSLK___3C34F16F">
+      <End Role="PER_MSLK_FLYT_DETAY_TNM" EntitySet="PER_MSLK_FLYT_DETAY_TNM" />
+      <End Role="PER_MSLK_FLYT" EntitySet="PER_MSLK_FLYT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___MSLK___3D2915A8" Association="Self.FK__PER_MSLK___MSLK___3D2915A8">
+      <End Role="PER_MSLK_FLYT_TNM" EntitySet="PER_MSLK_FLYT_TNM" />
+      <End Role="PER_MSLK_FLYT" EntitySet="PER_MSLK_FLYT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___MSLK___3E1D39E1" Association="Self.FK__PER_MSLK___MSLK___3E1D39E1">
+      <End Role="PER_MSLK_FLYT_TUR_TNM" EntitySet="PER_MSLK_FLYT_TUR_TNM" />
+      <End Role="PER_MSLK_FLYT" EntitySet="PER_MSLK_FLYT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___MSLK___40058253" Association="Self.FK__PER_MSLK___MSLK___40058253">
+      <End Role="PER_MSLK_FLYT_TNM" EntitySet="PER_MSLK_FLYT_TNM" />
+      <End Role="PER_MSLK_FLYT_DETAY_TNM" EntitySet="PER_MSLK_FLYT_DETAY_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___MSLK___40F9A68C" Association="Self.FK__PER_MSLK___MSLK___40F9A68C">
+      <End Role="PER_MSLK_FLYT_TUR_TNM" EntitySet="PER_MSLK_FLYT_TUR_TNM" />
+      <End Role="PER_MSLK_FLYT_TNM" EntitySet="PER_MSLK_FLYT_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MSLK___PER_I__3F115E1A" Association="Self.FK__PER_MSLK___PER_I__3F115E1A">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_MSLK_FLYT" EntitySet="PER_MSLK_FLYT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MUAYE__PER_I__19E77360" Association="Self.FK__PER_MUAYE__PER_I__19E77360">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_MUAYENE" EntitySet="PER_MUAYENE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MUAYE__PER_I__48A26249" Association="Self.FK__PER_MUAYE__PER_I__48A26249">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_MUAYENE" EntitySet="PER_MUAYENE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_MUAYE__PER_I__4C72F32D" Association="Self.FK__PER_MUAYE__PER_I__4C72F32D">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_MUAYENE" EntitySet="PER_MUAYENE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_T__KRM_K__41EDCAC5" Association="Self.FK__PER_NBT_T__KRM_K__41EDCAC5">
+      <End Role="PER_KRM_TNM" EntitySet="PER_KRM_TNM" />
+      <End Role="PER_NBT_TNM" EntitySet="PER_NBT_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__NBT_N__489AC854" Association="Self.FK__PER_NBT_V__NBT_N__489AC854">
+      <End Role="PER_NBT_TNM" EntitySet="PER_NBT_TNM" />
+      <End Role="PER_NBT_VRD_TNM" EntitySet="PER_NBT_VRD_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__NBT_T__45BE5BA9" Association="Self.FK__PER_NBT_V__NBT_T__45BE5BA9">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_NBT_VRD_PER" EntitySet="PER_NBT_VRD_PER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__NBT_T__46B27FE2" Association="Self.FK__PER_NBT_V__NBT_T__46B27FE2">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_NBT_VRD_PER" EntitySet="PER_NBT_VRD_PER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__PER_I__44CA3770" Association="Self.FK__PER_NBT_V__PER_I__44CA3770">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_NBT_VRD_ADAY_PER" EntitySet="PER_NBT_VRD_ADAY_PER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__VRD_N__42E1EEFE" Association="Self.FK__PER_NBT_V__VRD_N__42E1EEFE">
+      <End Role="PER_NBT_VRD_TNM" EntitySet="PER_NBT_VRD_TNM" />
+      <End Role="PER_NBT_VRD" EntitySet="PER_NBT_VRD" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_V__VRD_N__43D61337" Association="Self.FK__PER_NBT_V__VRD_N__43D61337">
+      <End Role="PER_NBT_VRD_TNM" EntitySet="PER_NBT_VRD_TNM" />
+      <End Role="PER_NBT_VRD_ADAY_PER" EntitySet="PER_NBT_VRD_ADAY_PER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_NBT_VRD_PER__48B770E2" Association="Self.FK__PER_NBT_VRD_PER__48B770E2">
+      <End Role="PER_NBT_VRD" EntitySet="PER_NBT_VRD" />
+      <End Role="PER_NBT_VRD_PER" EntitySet="PER_NBT_VRD_PER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_ODUL__ODUL_K__498EEC8D" Association="Self.FK__PER_ODUL__ODUL_K__498EEC8D">
+      <End Role="PER_ODUL_TNM" EntitySet="PER_ODUL_TNM" />
+      <End Role="PER_ODUL" EntitySet="PER_ODUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_ODUL__PER_ID__4A8310C6" Association="Self.FK__PER_ODUL__PER_ID__4A8310C6">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_ODUL" EntitySet="PER_ODUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL___BLM_T__503BEA1C" Association="Self.FK__PER_OKUL___BLM_T__503BEA1C">
+      <End Role="PER_OKUL_FKLT_BLM_TUR_TNM" EntitySet="PER_OKUL_FKLT_BLM_TUR_TNM" />
+      <End Role="PER_OKUL_FKLT_BLM_TNM" EntitySet="PER_OKUL_FKLT_BLM_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL___FKLT___51300E55" Association="Self.FK__PER_OKUL___FKLT___51300E55">
+      <End Role="PER_OKUL_FKLT_TNM" EntitySet="PER_OKUL_FKLT_TNM" />
+      <End Role="PER_OKUL_FKLT_BLM_TNM" EntitySet="PER_OKUL_FKLT_BLM_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL___FKLT___5224328E" Association="Self.FK__PER_OKUL___FKLT___5224328E">
+      <End Role="PER_OKUL_FKLT_TUR_TNM" EntitySet="PER_OKUL_FKLT_TUR_TNM" />
+      <End Role="PER_OKUL_FKLT_BLM_TUR_TNM" EntitySet="PER_OKUL_FKLT_BLM_TUR_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL___FKLT___531856C7" Association="Self.FK__PER_OKUL___FKLT___531856C7">
+      <End Role="PER_OKUL_FKLT_TUR_TNM" EntitySet="PER_OKUL_FKLT_TUR_TNM" />
+      <End Role="PER_OKUL_FKLT_TNM" EntitySet="PER_OKUL_FKLT_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL___OKUL___55009F39" Association="Self.FK__PER_OKUL___OKUL___55009F39">
+      <End Role="PER_OKUL_TUR_TNM" EntitySet="PER_OKUL_TUR_TNM" />
+      <End Role="PER_OKUL_TNM" EntitySet="PER_OKUL_TNM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL__BLM_KO__4B7734FF" Association="Self.FK__PER_OKUL__BLM_KO__4B7734FF">
+      <End Role="PER_OKUL_FKLT_BLM_TNM" EntitySet="PER_OKUL_FKLT_BLM_TNM" />
+      <End Role="PER_OKUL" EntitySet="PER_OKUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL__FKLT_K__4C6B5938" Association="Self.FK__PER_OKUL__FKLT_K__4C6B5938">
+      <End Role="PER_OKUL_FKLT_TNM" EntitySet="PER_OKUL_FKLT_TNM" />
+      <End Role="PER_OKUL" EntitySet="PER_OKUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL__OKUL_K__4D5F7D71" Association="Self.FK__PER_OKUL__OKUL_K__4D5F7D71">
+      <End Role="PER_OKUL_TNM" EntitySet="PER_OKUL_TNM" />
+      <End Role="PER_OKUL" EntitySet="PER_OKUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL__OKUL_T__4E53A1AA" Association="Self.FK__PER_OKUL__OKUL_T__4E53A1AA">
+      <End Role="PER_OKUL_TUR_TNM" EntitySet="PER_OKUL_TUR_TNM" />
+      <End Role="PER_OKUL" EntitySet="PER_OKUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OKUL__PER_ID__4F47C5E3" Association="Self.FK__PER_OKUL__PER_ID__4F47C5E3">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_OKUL" EntitySet="PER_OKUL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_OZEL___PER_I__4242D080" Association="Self.FK__PER_OZEL___PER_I__4242D080">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_OZEL_MUAYENE" EntitySet="PER_OZEL_MUAYENE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_RESIM__PER_I__4707859D" Association="Self.FK__PER_RESIM__PER_I__4707859D">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_RESIM" EntitySet="PER_RESIM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_SGLK___MLZ_K__57DD0BE4" Association="Self.FK__PER_SGLK___MLZ_K__57DD0BE4">
+      <End Role="PER_SGLK_MLZ_TNM" EntitySet="PER_SGLK_MLZ_TNM" />
+      <End Role="PER_SGLK_MLZ" EntitySet="PER_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PER_SGLK___PER_I__58D1301D" Association="Self.FK__PER_SGLK___PER_I__58D1301D">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_SGLK_MLZ" EntitySet="PER_SGLK_MLZ" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_GCC_GRV_PER_KIMLIK" Association="Self.FK_PER_GCC_GRV_PER_KIMLIK">
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+      <End Role="PER_GCC_GRV" EntitySet="PER_GCC_GRV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_KIMLIK_DRMKODU" Association="Self.FK_PER_KIMLIK_DRMKODU">
+      <End Role="PER_CLS_BCM_TNM" EntitySet="PER_CLS_BCM_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_KIMLIK_PER_KRM_BRM_KDR_TNM" Association="Self.FK_PER_KIMLIK_PER_KRM_BRM_KDR_TNM">
+      <End Role="PER_KRM_BRM_KDR_TNM" EntitySet="PER_KRM_BRM_KDR_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_KIMLIK_PER_KRM_BRM_TNM" Association="Self.FK_PER_KIMLIK_PER_KRM_BRM_TNM">
+      <End Role="PER_KRM_BRM_TNM" EntitySet="PER_KRM_BRM_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_KIMLIK_PER_SAKAT_TNM" Association="Self.FK_PER_KIMLIK_PER_SAKAT_TNM">
+      <End Role="PER_SAKAT_TNM" EntitySet="PER_SAKAT_TNM" />
+      <End Role="PER_KIMLIK" EntitySet="PER_KIMLIK" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
