@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72C3B11D-A886-42B9-98AB-677DED48B2EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hbys.Core</RootNamespace>
+    <AssemblyName>Hbys.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WebGreaseLibPath>..\WebPersonel\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WebPersonel\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\RepoClass.cs" />
+    <Compile Include="Helpers\UnitOfWorks.cs" />
+    <Compile Include="Models\HbysModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HbysModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HbysModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HbysModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HbysModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ADAY_DRM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_AILE.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_AILE_SGLK_MLZ.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_BRANS_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_CEZA.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_CEZA_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_CLS_BCM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_DIL_SNV.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_DIL_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_EHLIYET.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_EHLIYET_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_GCC_GRV.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_GRV.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_HRK.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ILCE_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_IL_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ISTIFA.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_IZIN.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_IZIN_ISTEK.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_IZIN_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KAN_ISTM_FRM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KAN_ISTM_FRM_TUR.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KAN_ISTM_TUR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KARTLAR.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KART_KURUM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KART_LOG.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KIMLIK.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KRM_BKNLK_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KRM_BRM_KDR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KRM_BRM_KDR_YER.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KRM_BRM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KRM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KURS.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_KURS_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MCBR_HZMT_DRM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MSLK_FLYT.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MSLK_FLYT_DETAY_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MSLK_FLYT_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MSLK_FLYT_TUR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_MUAYENE.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_NBT_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_NBT_VRD.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_NBT_VRD_PER.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_NBT_VRD_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ODUL.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ODUL_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_FKLT_BLM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_FKLT_BLM_TUR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_FKLT_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_FKLT_TUR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OKUL_TUR_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_OZEL_MUAYENE.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_RESIM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SAKAT_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SGLK.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SGLK_MLZ.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SGLK_MLZ_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SGLK_TRM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SNF_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_SNV_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_STAJ_DRM_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_TSKLT_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_ULKE_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PER_UNVAN_TNM.cs">
+      <DependentUpon>HbysModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Models\HbysModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HbysModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\HbysModels.edmx.diagram">
+      <DependentUpon>HbysModels.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\HbysModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HbysModels.edmx</DependentUpon>
+      <LastGenOutput>HbysModels.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HbysModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HbysModels.edmx</DependentUpon>
+      <LastGenOutput>HbysModels.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
